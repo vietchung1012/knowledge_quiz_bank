@@ -1,25 +1,25 @@
-// Trang chủ: tải danh sách lĩnh vực từ data/fields.json và hiển thị dạng thẻ chọn.
+// Trang chủ: tải danh sách LĨNH VỰC từ data/categories.json và hiển thị dạng thẻ chọn.
+// Mỗi lĩnh vực là 1 thư mục riêng (vd English/) có trang mục lục con của nó.
 
-async function loadFields() {
+async function loadCategories() {
   const grid = document.getElementById("field-grid");
   try {
-    const res = await fetch("data/fields.json");
+    const res = await fetch("data/categories.json");
     if (!res.ok) throw new Error("Không tải được danh sách lĩnh vực.");
-    const fields = await res.json();
+    const categories = await res.json();
 
-    if (!Array.isArray(fields) || fields.length === 0) {
+    if (!Array.isArray(categories) || categories.length === 0) {
       grid.innerHTML = '<p class="loading">Chưa có lĩnh vực nào. Quay lại sau nhé!</p>';
       return;
     }
 
-    grid.innerHTML = fields
+    grid.innerHTML = categories
       .map(
-        (field) => `
-        <a class="field-card" href="quiz.html?field=${encodeURIComponent(field.id)}">
-          <span class="field-icon">${field.icon || "📝"}</span>
-          <h3>${field.title}</h3>
-          <p>${field.description || ""}</p>
-          <span class="field-count">${field.questionCount || "?"} câu hỏi</span>
+        (cat) => `
+        <a class="field-card" href="${cat.path}">
+          <span class="field-icon">${cat.icon || "📂"}</span>
+          <h3>${cat.title}</h3>
+          <p>${cat.description || ""}</p>
         </a>`
       )
       .join("");
@@ -28,4 +28,4 @@ async function loadFields() {
   }
 }
 
-loadFields();
+loadCategories();
