@@ -8,7 +8,8 @@
   "Khoảng 665/3396 mục (~20%) có trường 'pronunciation' để trống do PDF gốc ghi phiên âm bằng chữ thường không dùng ký hiệu IPA (ví dụ: end, pound) — phần phiên âm trong các trường hợp này vẫn còn nằm ở đầu chuỗi 'meaning', không bị mất dữ liệu, chỉ chưa tách riêng được.",
   "47 mục là cụm từ/thành ngữ (vd: 'take part in', 'in case of') được chuẩn hoá thủ công do không có nhãn loại từ đơn trong PDF gốc.",
   "Bản cập nhật 2026-11-05: đã sửa lỗi 24 mục bị gắn sai type do PDF gốc dùng viết tắt 'pro' thay vì 'pron' cho đại từ (vd: he, she, it, this, what) — trước đó các từ này bị thiếu nhãn 'pron' và lẫn ký tự thừa vào đầu chuỗi meaning.",
-  "Đây là kho dữ liệu từ điển thô — CHƯA phải câu hỏi quiz. Cần bước xử lý riêng để sinh câu hỏi trắc nghiệm từ kho này."
+  "Đây là kho dữ liệu từ điển thô — CHƯA phải câu hỏi quiz. Cần bước xử lý riêng để sinh câu hỏi trắc nghiệm từ kho này.",
+  "Bản cập nhật 2026-11-05 (lần 2): chuẩn hoá chữ hoa/thường cho 5 mục (TRUE/FALSE/Unfair/Unusual/Unwilling) — PDF nguồn ghi hoa bất thường cho các từ thông dụng này, đã chuyển về chữ thường để nhất quán khi hiển thị."
  ],
  "words": [
   {
@@ -7923,7 +7924,7 @@
   },
   {
    "no": 1131,
-   "word": "FALSE",
+   "word": "false",
    "type": "adj",
    "pronunciation": "fo:ls",
    "meaning": "sai, nhầm, giả dối"
@@ -21832,7 +21833,7 @@
   },
   {
    "no": 3118,
-   "word": "TRUE",
+   "word": "true",
    "type": "adj",
    "pronunciation": "tru:",
    "meaning": "đúng, thật"
@@ -22168,7 +22169,7 @@
   },
   {
    "no": 3166,
-   "word": "Unfair, unfairly",
+   "word": "unfair, unfairly",
    "type": "",
    "pronunciation": "ʌn´fɛə",
    "meaning": "không đúng, không công bằng, gian lận"
@@ -22378,7 +22379,7 @@
   },
   {
    "no": 3196,
-   "word": "Unusual",
+   "word": "unusual",
    "type": "",
    "pronunciation": "ʌn´ju:ʒuəl",
    "meaning": "hiếm, khác thường"
@@ -22392,7 +22393,7 @@
   },
   {
    "no": 3198,
-   "word": "Unwilling",
+   "word": "unwilling",
    "type": "",
    "pronunciation": "ʌn´wiliη",
    "meaning": "không muốn, không có ý định"

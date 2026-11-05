@@ -1,0 +1,1352 @@
+{
+ "source": "Câu ví dụ do Claude soạn trực tiếp (không trích dẫn từ nguồn khác), kèm dịch tiếng Việt",
+ "scope": "335 từ duy nhất sẽ xuất hiện trong 60 ngày đầu của vòng xoay từ hàng ngày (tính từ 2026-11-05 theo thuật toán chọn từ trong js/writing.js)",
+ "totalWords": 335,
+ "notes": [
+  "Đây là tập con nhỏ, chưa phủ hết 3396 từ trong oxford_3000.json — chỉ phủ các từ sẽ thực sự xuất hiện trong 60 ngày đầu tiên.",
+  "Nếu một từ trong bài viết hôm đó không có trong danh sách này (ví dụ sau ngày 60, hoặc do vòng xoay lặp lại từ mới), giao diện sẽ báo 'Chưa có câu mẫu' thay vì tự sinh câu — để tránh nội dung AI chưa được kiểm tra.",
+  "Phạm vi sẽ được mở rộng dần theo thời gian."
+ ],
+ "sentences": {
+  "September": {
+   "en": "We are planning a trip to Da Nang in September.",
+   "vi": "Chúng tôi đang lên kế hoạch đi Đà Nẵng vào tháng Chín."
+  },
+  "abuse": {
+   "en": "The manager was fired for his abuse of company funds.",
+   "vi": "Người quản lý bị sa thải vì lạm dụng quỹ công ty."
+  },
+  "accurate": {
+   "en": "Please give me an accurate description of what happened.",
+   "vi": "Hãy cho tôi một mô tả chính xác về những gì đã xảy ra."
+  },
+  "acknowledge": {
+   "en": "I want to acknowledge everyone's hard work on this project.",
+   "vi": "Tôi muốn ghi nhận công sức của mọi người trong dự án này."
+  },
+  "act": {
+   "en": "You need to act quickly before the deadline passes.",
+   "vi": "Bạn cần hành động nhanh trước khi hết hạn."
+  },
+  "adapt": {
+   "en": "It took her a while to adapt to the new job.",
+   "vi": "Cô ấy mất một thời gian để thích nghi với công việc mới."
+  },
+  "additional": {
+   "en": "The hotel charges an additional fee for breakfast.",
+   "vi": "Khách sạn tính thêm một khoản phí cho bữa sáng."
+  },
+  "address": {
+   "en": "Can you write down your home address for me?",
+   "vi": "Bạn có thể viết địa chỉ nhà cho tôi được không?"
+  },
+  "admire": {
+   "en": "I really admire how calm she stays under pressure.",
+   "vi": "Tôi thực sự ngưỡng mộ cách cô ấy giữ bình tĩnh khi áp lực."
+  },
+  "admit": {
+   "en": "He finally admitted that he had made a mistake.",
+   "vi": "Cuối cùng anh ấy đã thừa nhận mình đã phạm sai lầm."
+  },
+  "agree": {
+   "en": "I agree with most of what you said in the meeting.",
+   "vi": "Tôi đồng ý với hầu hết những gì bạn nói trong cuộc họp."
+  },
+  "amazing": {
+   "en": "The view from the top of the mountain was amazing.",
+   "vi": "Khung cảnh từ đỉnh núi thật đáng kinh ngạc."
+  },
+  "amusing": {
+   "en": "He told an amusing story about his first day at work.",
+   "vi": "Anh ấy kể một câu chuyện vui về ngày đầu tiên đi làm."
+  },
+  "answer": {
+   "en": "She didn't know the answer to the teacher's question.",
+   "vi": "Cô ấy không biết câu trả lời cho câu hỏi của giáo viên."
+  },
+  "anticipate": {
+   "en": "We anticipate strong sales during the holiday season.",
+   "vi": "Chúng tôi dự đoán doanh số sẽ cao trong mùa lễ."
+  },
+  "apartment": {
+   "en": "They just moved into a small apartment downtown.",
+   "vi": "Họ vừa chuyển vào một căn hộ nhỏ ở trung tâm thành phố."
+  },
+  "armed": {
+   "en": "The building is guarded by armed security staff.",
+   "vi": "Tòa nhà được bảo vệ bởi nhân viên an ninh có vũ trang."
+  },
+  "ask": {
+   "en": "Feel free to ask if you have any questions.",
+   "vi": "Cứ hỏi thoải mái nếu bạn có bất kỳ câu hỏi nào."
+  },
+  "asleep": {
+   "en": "The baby fell asleep in the middle of the song.",
+   "vi": "Em bé đã ngủ thiếp đi giữa chừng bài hát."
+  },
+  "attach": {
+   "en": "Please attach your resume to the email.",
+   "vi": "Vui lòng đính kèm sơ yếu lý lịch của bạn vào email."
+  },
+  "attempted": {
+   "en": "He attempted to fix the printer himself before calling support.",
+   "vi": "Anh ấy đã cố gắng tự sửa máy in trước khi gọi hỗ trợ."
+  },
+  "attract": {
+   "en": "Bright colors attract more customers to the shop.",
+   "vi": "Màu sắc tươi sáng thu hút nhiều khách hàng hơn đến cửa hàng."
+  },
+  "attraction": {
+   "en": "The old temple is the main attraction in this town.",
+   "vi": "Ngôi đền cổ là điểm thu hút chính của thị trấn này."
+  },
+  "average": {
+   "en": "The average temperature in July is quite high here.",
+   "vi": "Nhiệt độ trung bình vào tháng Bảy ở đây khá cao."
+  },
+  "avoid": {
+   "en": "Try to avoid heavy traffic by leaving earlier.",
+   "vi": "Hãy cố tránh kẹt xe bằng cách đi sớm hơn."
+  },
+  "bad": {
+   "en": "It wasn't a good idea, but it wasn't that bad either.",
+   "vi": "Đó không phải là ý hay, nhưng cũng không tệ lắm."
+  },
+  "bar": {
+   "en": "We met some old friends at a bar last night.",
+   "vi": "Tối qua chúng tôi gặp vài người bạn cũ ở quán bar."
+  },
+  "bargain": {
+   "en": "She got a good bargain on a secondhand bicycle.",
+   "vi": "Cô ấy đã mua được một chiếc xe đạp cũ với giá hời."
+  },
+  "bath": {
+   "en": "After the long hike, a warm bath felt wonderful.",
+   "vi": "Sau chuyến đi bộ dài, một bồn tắm nước ấm thật tuyệt."
+  },
+  "beak": {
+   "en": "The bird used its sharp beak to crack the seed.",
+   "vi": "Con chim dùng mỏ sắc của nó để cắn vỡ hạt."
+  },
+  "benefit": {
+   "en": "Regular exercise brings many benefits to your health.",
+   "vi": "Tập thể dục đều đặn mang lại nhiều lợi ích cho sức khỏe."
+  },
+  "big": {
+   "en": "They just bought a big house near the lake.",
+   "vi": "Họ vừa mua một ngôi nhà lớn gần hồ."
+  },
+  "blade": {
+   "en": "Be careful, the blade of this knife is very sharp.",
+   "vi": "Cẩn thận, lưỡi dao này rất sắc."
+  },
+  "blonde (blond)": {
+   "en": "Her blonde hair stood out in the crowd.",
+   "vi": "Mái tóc vàng hoe của cô ấy nổi bật giữa đám đông."
+  },
+  "boring": {
+   "en": "The meeting was so boring that I almost fell asleep.",
+   "vi": "Cuộc họp nhàm chán đến mức tôi suýt ngủ gật."
+  },
+  "borrow": {
+   "en": "Can I borrow your pen for a minute?",
+   "vi": "Tôi có thể mượn bút của bạn một lát được không?"
+  },
+  "brick": {
+   "en": "The old house is built entirely of red brick.",
+   "vi": "Ngôi nhà cũ được xây hoàn toàn bằng gạch đỏ."
+  },
+  "brilliant": {
+   "en": "That was a brilliant idea for solving the problem.",
+   "vi": "Đó là một ý tưởng xuất sắc để giải quyết vấn đề."
+  },
+  "bring": {
+   "en": "Don't forget to bring an umbrella, it might rain.",
+   "vi": "Đừng quên mang theo ô, trời có thể mưa."
+  },
+  "broken": {
+   "en": "The glass was broken when the box arrived.",
+   "vi": "Chiếc ly đã bị vỡ khi hộp hàng đến nơi."
+  },
+  "brown": {
+   "en": "She painted the wooden table a dark brown color.",
+   "vi": "Cô ấy sơn chiếc bàn gỗ màu nâu đậm."
+  },
+  "bus": {
+   "en": "I usually take the bus to work in the morning.",
+   "vi": "Tôi thường đi xe buýt đến chỗ làm vào buổi sáng."
+  },
+  "buy": {
+   "en": "We need to buy some vegetables for dinner tonight.",
+   "vi": "Chúng tôi cần mua ít rau cho bữa tối nay."
+  },
+  "cake": {
+   "en": "She baked a chocolate cake for his birthday.",
+   "vi": "Cô ấy đã nướng một chiếc bánh socola cho sinh nhật anh ấy."
+  },
+  "calculate": {
+   "en": "Let me calculate the total cost before we decide.",
+   "vi": "Để tôi tính tổng chi phí trước khi chúng ta quyết định."
+  },
+  "capacity": {
+   "en": "The stadium has a seating capacity of fifty thousand.",
+   "vi": "Sân vận động có sức chứa năm mươi nghìn chỗ ngồi."
+  },
+  "careless": {
+   "en": "A careless mistake in the report cost us the client.",
+   "vi": "Một sai sót bất cẩn trong báo cáo đã khiến chúng tôi mất khách hàng."
+  },
+  "catch": {
+   "en": "Run fast or you will miss the bus and not catch it.",
+   "vi": "Chạy nhanh lên không thì bạn sẽ lỡ và không bắt kịp xe buýt."
+  },
+  "cheat": {
+   "en": "It's never worth it to cheat on an exam.",
+   "vi": "Gian lận trong kỳ thi không bao giờ đáng để làm."
+  },
+  "cheek": {
+   "en": "The little girl kissed her grandmother on the cheek.",
+   "vi": "Cô bé hôn lên má bà của mình."
+  },
+  "color, colour": {
+   "en": "What color do you want to paint the bedroom?",
+   "vi": "Bạn muốn sơn phòng ngủ màu gì?"
+  },
+  "comfort": {
+   "en": "She found comfort in talking to an old friend.",
+   "vi": "Cô ấy tìm thấy sự an ủi khi trò chuyện với một người bạn cũ."
+  },
+  "comment": {
+   "en": "He left a kind comment under my photo online.",
+   "vi": "Anh ấy để lại một bình luận tử tế dưới bức ảnh của tôi trên mạng."
+  },
+  "company": {
+   "en": "She has worked for this company for ten years.",
+   "vi": "Cô ấy đã làm việc cho công ty này mười năm."
+  },
+  "complete": {
+   "en": "Please complete the form before you leave the office.",
+   "vi": "Vui lòng hoàn thành biểu mẫu trước khi bạn rời văn phòng."
+  },
+  "concentrate": {
+   "en": "It's hard to concentrate when the music is so loud.",
+   "vi": "Thật khó tập trung khi nhạc quá lớn."
+  },
+  "concern": {
+   "en": "Her main concern is whether the plan is safe.",
+   "vi": "Mối quan tâm chính của cô ấy là liệu kế hoạch có an toàn không."
+  },
+  "condition": {
+   "en": "The old car is still in good condition.",
+   "vi": "Chiếc xe cũ vẫn còn trong tình trạng tốt."
+  },
+  "conduct": {
+   "en": "The teacher will conduct the interview tomorrow morning.",
+   "vi": "Giáo viên sẽ tiến hành buổi phỏng vấn vào sáng mai."
+  },
+  "confidence": {
+   "en": "She answered every question with great confidence.",
+   "vi": "Cô ấy trả lời mọi câu hỏi với sự tự tin lớn."
+  },
+  "confine": {
+   "en": "Please confine your remarks to the topic we are discussing.",
+   "vi": "Xin hãy giới hạn ý kiến của bạn trong chủ đề chúng ta đang bàn."
+  },
+  "container": {
+   "en": "She poured the soup into a plastic container.",
+   "vi": "Cô ấy đổ súp vào một cái hộp nhựa."
+  },
+  "contemporary": {
+   "en": "The museum focuses on contemporary art from young artists.",
+   "vi": "Bảo tàng tập trung vào nghệ thuật hiện đại của các nghệ sĩ trẻ."
+  },
+  "continuous": {
+   "en": "We heard a continuous noise coming from the engine.",
+   "vi": "Chúng tôi nghe thấy tiếng ồn liên tục phát ra từ động cơ."
+  },
+  "cooking": {
+   "en": "He took a cooking class to learn Italian dishes.",
+   "vi": "Anh ấy tham gia một lớp học nấu ăn để học các món Ý."
+  },
+  "cut": {
+   "en": "Could you cut the bread into smaller pieces?",
+   "vi": "Bạn có thể cắt bánh mì thành những miếng nhỏ hơn không?"
+  },
+  "cycle": {
+   "en": "The water cycle includes evaporation, rain, and rivers.",
+   "vi": "Vòng tuần hoàn nước bao gồm bốc hơi, mưa và sông."
+  },
+  "deaf": {
+   "en": "My grandfather is partly deaf, so I speak loudly to him.",
+   "vi": "Ông tôi bị điếc một phần, nên tôi nói to với ông."
+  },
+  "delicate": {
+   "en": "Handle the vase carefully, it's very delicate.",
+   "vi": "Hãy cầm chiếc bình cẩn thận, nó rất dễ vỡ."
+  },
+  "deny": {
+   "en": "He couldn't deny that he had forgotten the meeting.",
+   "vi": "Anh ấy không thể chối rằng mình đã quên cuộc họp."
+  },
+  "depress": {
+   "en": "Bad news like this can really depress people.",
+   "vi": "Tin xấu như vậy thực sự có thể làm người ta buồn chán."
+  },
+  "depressed": {
+   "en": "She felt depressed after losing her job.",
+   "vi": "Cô ấy cảm thấy chán nản sau khi mất việc."
+  },
+  "depth": {
+   "en": "Scientists measured the depth of the lake carefully.",
+   "vi": "Các nhà khoa học đã đo độ sâu của hồ một cách kỹ lưỡng."
+  },
+  "describe": {
+   "en": "Can you describe what the suspect looked like?",
+   "vi": "Bạn có thể miêu tả hình dáng của nghi phạm không?"
+  },
+  "design": {
+   "en": "The company hired a new team to design the app.",
+   "vi": "Công ty đã thuê một nhóm mới để thiết kế ứng dụng."
+  },
+  "destruction": {
+   "en": "The storm caused massive destruction along the coast.",
+   "vi": "Cơn bão đã gây ra sự phá hủy lớn dọc theo bờ biển."
+  },
+  "detailed": {
+   "en": "Please send me a detailed report by Friday.",
+   "vi": "Vui lòng gửi cho tôi một báo cáo chi tiết trước thứ Sáu."
+  },
+  "determined": {
+   "en": "She is determined to finish the marathon this year.",
+   "vi": "Cô ấy quyết tâm hoàn thành cuộc chạy marathon năm nay."
+  },
+  "develop": {
+   "en": "The team plans to develop a new mobile game.",
+   "vi": "Nhóm dự định phát triển một trò chơi di động mới."
+  },
+  "diary": {
+   "en": "She writes in her diary every night before bed.",
+   "vi": "Cô ấy viết nhật ký mỗi tối trước khi đi ngủ."
+  },
+  "dinner": {
+   "en": "We're having fish for dinner tonight.",
+   "vi": "Tối nay chúng tôi ăn cá cho bữa tối."
+  },
+  "disadvantage": {
+   "en": "Living far from the city is a big disadvantage for her.",
+   "vi": "Sống xa thành phố là một bất lợi lớn đối với cô ấy."
+  },
+  "disappoint": {
+   "en": "I hope the final result won't disappoint you.",
+   "vi": "Tôi hy vọng kết quả cuối cùng sẽ không làm bạn thất vọng."
+  },
+  "dishonest": {
+   "en": "It was dishonest of him to hide the true cost.",
+   "vi": "Việc anh ấy giấu chi phí thật là không trung thực."
+  },
+  "display": {
+   "en": "The shop has a new display in the front window.",
+   "vi": "Cửa hàng có một khu trưng bày mới ở cửa sổ phía trước."
+  },
+  "distinguish": {
+   "en": "It's hard to distinguish the twins from each other.",
+   "vi": "Thật khó để phân biệt hai anh em song sinh."
+  },
+  "do vauxiliary,": {
+   "en": "Do you usually walk to school in the morning?",
+   "vi": "Bạn có thường đi bộ đến trường vào buổi sáng không?"
+  },
+  "domestic": {
+   "en": "The airline mainly operates domestic flights within the country.",
+   "vi": "Hãng hàng không chủ yếu khai thác các chuyến bay nội địa trong nước."
+  },
+  "drag": {
+   "en": "Help me drag this heavy box across the room.",
+   "vi": "Giúp tôi kéo cái hộp nặng này qua phòng."
+  },
+  "dressed": {
+   "en": "She was dressed in a bright red coat.",
+   "vi": "Cô ấy mặc một chiếc áo khoác màu đỏ tươi."
+  },
+  "dull": {
+   "en": "The lecture was so dull that students kept checking the clock.",
+   "vi": "Buổi giảng quá tẻ nhạt nên học sinh liên tục xem giờ."
+  },
+  "dump": {
+   "en": "Please don't dump your trash on the street.",
+   "vi": "Xin đừng vứt rác xuống đường."
+  },
+  "ease": {
+   "en": "She finished the test with surprising ease.",
+   "vi": "Cô ấy hoàn thành bài kiểm tra một cách dễ dàng đáng ngạc nhiên."
+  },
+  "east": {
+   "en": "The sun rises in the east every morning.",
+   "vi": "Mặt trời mọc ở phía đông mỗi sáng."
+  },
+  "editor": {
+   "en": "The editor made several changes to my article.",
+   "vi": "Biên tập viên đã thực hiện vài thay đổi đối với bài viết của tôi."
+  },
+  "educated": {
+   "en": "He is a well-educated man who reads a lot.",
+   "vi": "Anh ấy là một người có học vấn tốt và đọc rất nhiều sách."
+  },
+  "effective": {
+   "en": "This new method is more effective than the old one.",
+   "vi": "Phương pháp mới này hiệu quả hơn phương pháp cũ."
+  },
+  "electrical": {
+   "en": "There seems to be an electrical problem with the fan.",
+   "vi": "Có vẻ như quạt có vấn đề về điện."
+  },
+  "elegant": {
+   "en": "She wore an elegant black dress to the party.",
+   "vi": "Cô ấy mặc một chiếc váy đen thanh lịch đến buổi tiệc."
+  },
+  "email, e-mail": {
+   "en": "I'll send you the details by email tomorrow.",
+   "vi": "Ngày mai tôi sẽ gửi chi tiết cho bạn qua email."
+  },
+  "emotional": {
+   "en": "It was an emotional farewell at the airport.",
+   "vi": "Đó là một cuộc chia tay đầy cảm xúc ở sân bay."
+  },
+  "emphasize": {
+   "en": "The teacher wants to emphasize the importance of practice.",
+   "vi": "Giáo viên muốn nhấn mạnh tầm quan trọng của việc luyện tập."
+  },
+  "encourage": {
+   "en": "Good teachers encourage students to ask questions.",
+   "vi": "Giáo viên tốt khuyến khích học sinh đặt câu hỏi."
+  },
+  "enjoy": {
+   "en": "I really enjoy spending weekends in the countryside.",
+   "vi": "Tôi rất thích dành những ngày cuối tuần ở nông thôn."
+  },
+  "enjoyment": {
+   "en": "Reading gives her a lot of enjoyment after work.",
+   "vi": "Đọc sách mang lại cho cô ấy nhiều niềm vui sau giờ làm."
+  },
+  "even": {
+   "en": "Even the experts were surprised by the result.",
+   "vi": "Ngay cả các chuyên gia cũng ngạc nhiên với kết quả."
+  },
+  "exact": {
+   "en": "I don't remember the exact time the meeting started.",
+   "vi": "Tôi không nhớ chính xác giờ cuộc họp bắt đầu."
+  },
+  "exaggerate": {
+   "en": "He tends to exaggerate how difficult his job is.",
+   "vi": "Anh ấy có xu hướng phóng đại mức độ khó của công việc mình."
+  },
+  "expected": {
+   "en": "The train arrived later than expected.",
+   "vi": "Tàu đến muộn hơn dự kiến."
+  },
+  "expert": {
+   "en": "She consulted an expert before buying the old house.",
+   "vi": "Cô ấy đã hỏi ý kiến chuyên gia trước khi mua ngôi nhà cũ."
+  },
+  "explosion": {
+   "en": "A loud explosion was heard near the factory.",
+   "vi": "Một tiếng nổ lớn được nghe thấy gần nhà máy."
+  },
+  "express": {
+   "en": "She wrote a letter to express her gratitude.",
+   "vi": "Cô ấy viết một lá thư để thể hiện lòng biết ơn."
+  },
+  "extension": {
+   "en": "We're building an extension at the back of the house.",
+   "vi": "Chúng tôi đang xây thêm một phần mở rộng ở phía sau nhà."
+  },
+  "extraordinary": {
+   "en": "He showed extraordinary courage during the rescue.",
+   "vi": "Anh ấy đã thể hiện sự can đảm phi thường trong cuộc cứu hộ."
+  },
+  "fact": {
+   "en": "It's a fact that the city grew rapidly last decade.",
+   "vi": "Đó là một sự thật rằng thành phố đã phát triển nhanh chóng thập kỷ trước."
+  },
+  "faith": {
+   "en": "She has great faith in her team's ability.",
+   "vi": "Cô ấy có niềm tin lớn vào khả năng của nhóm mình."
+  },
+  "famous": {
+   "en": "This street is famous for its old bookshops.",
+   "vi": "Con phố này nổi tiếng với những tiệm sách cũ."
+  },
+  "farming": {
+   "en": "His family has worked in farming for generations.",
+   "vi": "Gia đình anh ấy đã làm nông nghiệp qua nhiều thế hệ."
+  },
+  "fast": {
+   "en": "She can run very fast for her age.",
+   "vi": "Cô ấy có thể chạy rất nhanh so với tuổi của mình."
+  },
+  "favour": {
+   "en": "Could you do me a favour and water my plants?",
+   "vi": "Bạn có thể giúp tôi một việc và tưới cây giúp tôi không?"
+  },
+  "fight": {
+   "en": "The two boys got into a small fight over a toy.",
+   "vi": "Hai cậu bé đã cãi vã nhỏ vì một món đồ chơi."
+  },
+  "finance": {
+   "en": "She studied finance before working at the bank.",
+   "vi": "Cô ấy học tài chính trước khi làm việc ở ngân hàng."
+  },
+  "fix": {
+   "en": "Can you fix my bike before the weekend?",
+   "vi": "Bạn có thể sửa xe đạp của tôi trước cuối tuần không?"
+  },
+  "fold": {
+   "en": "Please fold the clothes and put them in the closet.",
+   "vi": "Vui lòng gấp quần áo và cho vào tủ."
+  },
+  "follow": {
+   "en": "Follow this road until you reach the bridge.",
+   "vi": "Đi theo con đường này đến khi bạn tới cây cầu."
+  },
+  "food": {
+   "en": "The food at that restaurant is always fresh.",
+   "vi": "Món ăn ở nhà hàng đó luôn tươi ngon."
+  },
+  "football": {
+   "en": "The kids play football in the park every evening.",
+   "vi": "Lũ trẻ chơi bóng đá ở công viên mỗi tối."
+  },
+  "forecast": {
+   "en": "The weather forecast predicts rain this weekend.",
+   "vi": "Dự báo thời tiết cho biết sẽ có mưa vào cuối tuần này."
+  },
+  "forgive": {
+   "en": "It took her years to forgive her old friend.",
+   "vi": "Cô ấy đã mất nhiều năm để tha thứ cho người bạn cũ."
+  },
+  "forward": {
+   "en": "Please move your chair a little forward.",
+   "vi": "Vui lòng di chuyển ghế của bạn lên phía trước một chút."
+  },
+  "frightened": {
+   "en": "The little dog looked frightened during the storm.",
+   "vi": "Con chó nhỏ trông sợ hãi trong cơn bão."
+  },
+  "fun": {
+   "en": "We had a lot of fun at the beach yesterday.",
+   "vi": "Hôm qua chúng tôi đã có rất nhiều vui vẻ ở biển."
+  },
+  "fund": {
+   "en": "The school set up a fund to help poor students.",
+   "vi": "Trường đã lập một quỹ để giúp đỡ học sinh nghèo."
+  },
+  "gain": {
+   "en": "He managed to gain the trust of his new coworkers.",
+   "vi": "Anh ấy đã giành được sự tin tưởng của các đồng nghiệp mới."
+  },
+  "general": {
+   "en": "In general, people here are very friendly.",
+   "vi": "Nói chung, người dân ở đây rất thân thiện."
+  },
+  "giant": {
+   "en": "A giant tree stood in the middle of the park.",
+   "vi": "Một cây khổng lồ đứng giữa công viên."
+  },
+  "global": {
+   "en": "Climate change is a serious global problem.",
+   "vi": "Biến đổi khí hậu là một vấn đề toàn cầu nghiêm trọng."
+  },
+  "go": {
+   "en": "We go to the market every Saturday morning.",
+   "vi": "Chúng tôi đi chợ mỗi sáng thứ Bảy."
+  },
+  "grand": {
+   "en": "They held a grand celebration for the company's anniversary.",
+   "vi": "Họ tổ chức một buổi lễ hoành tráng cho dịp kỷ niệm công ty."
+  },
+  "grant": {
+   "en": "The university gave her a grant to study abroad.",
+   "vi": "Trường đại học đã cấp cho cô ấy một khoản tài trợ để du học."
+  },
+  "grave": {
+   "en": "They visited his grandfather's grave on the anniversary.",
+   "vi": "Họ đến viếng mộ ông vào ngày giỗ."
+  },
+  "green": {
+   "en": "The hills turn bright green after the rainy season.",
+   "vi": "Những ngọn đồi chuyển sang màu xanh tươi sau mùa mưa."
+  },
+  "guard": {
+   "en": "A security guard checks every bag at the entrance.",
+   "vi": "Một bảo vệ kiểm tra từng túi ở cổng vào."
+  },
+  "hairdresser": {
+   "en": "I need to book an appointment with my hairdresser.",
+   "vi": "Tôi cần đặt hẹn với người làm tóc của mình."
+  },
+  "happy": {
+   "en": "She looked very happy when she got the news.",
+   "vi": "Cô ấy trông rất vui khi nhận được tin đó."
+  },
+  "hate": {
+   "en": "I hate waking up early on weekends.",
+   "vi": "Tôi ghét phải dậy sớm vào cuối tuần."
+  },
+  "have to": {
+   "en": "We have to leave now or we'll miss the flight.",
+   "vi": "Chúng tôi phải đi ngay bây giờ nếu không sẽ lỡ chuyến bay."
+  },
+  "heat": {
+   "en": "Turn down the heat before the soup boils over.",
+   "vi": "Giảm nhiệt trước khi súp bị sôi tràn ra."
+  },
+  "helpful": {
+   "en": "The staff at the hotel were very helpful.",
+   "vi": "Nhân viên khách sạn rất nhiệt tình giúp đỡ."
+  },
+  "hobby": {
+   "en": "Her favorite hobby is painting watercolor landscapes.",
+   "vi": "Sở thích yêu thích của cô ấy là vẽ tranh màu nước phong cảnh."
+  },
+  "hollow": {
+   "en": "The old tree trunk is completely hollow inside.",
+   "vi": "Thân cây cổ hoàn toàn rỗng bên trong."
+  },
+  "hope": {
+   "en": "I hope the weather is nice for the picnic.",
+   "vi": "Tôi hy vọng thời tiết đẹp cho buổi đi picnic."
+  },
+  "horror": {
+   "en": "She watched a horror movie alone last night.",
+   "vi": "Tối qua cô ấy đã xem một bộ phim kinh dị một mình."
+  },
+  "housing": {
+   "en": "Housing prices in the city have risen sharply.",
+   "vi": "Giá nhà ở trong thành phố đã tăng mạnh."
+  },
+  "illustrate": {
+   "en": "The teacher used a diagram to illustrate the process.",
+   "vi": "Giáo viên dùng một sơ đồ để minh họa quá trình đó."
+  },
+  "imaginary": {
+   "en": "The child talked to an imaginary friend at dinner.",
+   "vi": "Đứa trẻ nói chuyện với một người bạn tưởng tượng trong bữa tối."
+  },
+  "imagine": {
+   "en": "Try to imagine how different life was fifty years ago.",
+   "vi": "Hãy thử tưởng tượng cuộc sống khác thế nào năm mươi năm trước."
+  },
+  "impose": {
+   "en": "The government decided to impose a new tax on sugar.",
+   "vi": "Chính phủ quyết định áp đặt một loại thuế mới lên đường."
+  },
+  "improve": {
+   "en": "She practices every day to improve her English.",
+   "vi": "Cô ấy luyện tập mỗi ngày để cải thiện tiếng Anh."
+  },
+  "inch": {
+   "en": "The board is about an inch thick.",
+   "vi": "Tấm ván dày khoảng một inch."
+  },
+  "indicate": {
+   "en": "The report indicates a rise in local tourism.",
+   "vi": "Báo cáo cho thấy du lịch địa phương đang tăng."
+  },
+  "indirect": {
+   "en": "He gave an indirect answer instead of a clear one.",
+   "vi": "Anh ấy đưa ra một câu trả lời gián tiếp thay vì câu trả lời rõ ràng."
+  },
+  "inevitable": {
+   "en": "Some delays were inevitable because of the storm.",
+   "vi": "Một số sự chậm trễ là không thể tránh khỏi do cơn bão."
+  },
+  "infectious": {
+   "en": "The doctor confirmed it was an infectious disease.",
+   "vi": "Bác sĩ xác nhận đó là một bệnh truyền nhiễm."
+  },
+  "influence": {
+   "en": "Her parents had a strong influence on her career choice.",
+   "vi": "Cha mẹ cô ấy có ảnh hưởng lớn đến lựa chọn nghề nghiệp của cô."
+  },
+  "insult": {
+   "en": "He apologized for the insult he made during the argument.",
+   "vi": "Anh ấy xin lỗi vì lời sỉ nhục đã nói trong lúc tranh luận."
+  },
+  "interior": {
+   "en": "The interior of the car was clean and comfortable.",
+   "vi": "Nội thất của chiếc xe sạch sẽ và thoải mái."
+  },
+  "iron": {
+   "en": "Could you iron this shirt before I leave?",
+   "vi": "Bạn có thể ủi chiếc áo này trước khi tôi đi không?"
+  },
+  "justice": {
+   "en": "The victims demanded justice after the long trial.",
+   "vi": "Các nạn nhân yêu cầu công lý sau phiên tòa dài."
+  },
+  "kick": {
+   "en": "He accidentally kicked the ball into the neighbor's yard.",
+   "vi": "Anh ấy vô tình đá bóng vào vườn nhà hàng xóm."
+  },
+  "knock": {
+   "en": "Someone is knocking on the door, can you check?",
+   "vi": "Có ai đang gõ cửa, bạn kiểm tra được không?"
+  },
+  "lack of,": {
+   "en": "The project failed mainly because of a lack of funding.",
+   "vi": "Dự án thất bại chủ yếu vì thiếu kinh phí."
+  },
+  "large": {
+   "en": "They bought a large sofa for the living room.",
+   "vi": "Họ mua một chiếc ghế sofa lớn cho phòng khách."
+  },
+  "law": {
+   "en": "It's against the law to drive without a license.",
+   "vi": "Lái xe không có giấy phép là trái pháp luật."
+  },
+  "lead": {
+   "en": "She will lead the new marketing team next month.",
+   "vi": "Cô ấy sẽ dẫn dắt nhóm marketing mới vào tháng tới."
+  },
+  "license": {
+   "en": "You need a license to operate this kind of business.",
+   "vi": "Bạn cần giấy phép để kinh doanh loại hình này."
+  },
+  "link": {
+   "en": "She sent me a link to the article she mentioned.",
+   "vi": "Cô ấy gửi cho tôi một liên kết đến bài báo cô nhắc tới."
+  },
+  "load": {
+   "en": "The truck carried a heavy load of bricks.",
+   "vi": "Xe tải chở một chuyến hàng gạch nặng."
+  },
+  "location": {
+   "en": "The restaurant's location makes it easy to find.",
+   "vi": "Vị trí của nhà hàng khiến nó dễ tìm thấy."
+  },
+  "lock": {
+   "en": "Remember to lock the door before you leave.",
+   "vi": "Hãy nhớ khóa cửa trước khi bạn ra khỏi nhà."
+  },
+  "look": {
+   "en": "She gave him a worried look before the test.",
+   "vi": "Cô ấy nhìn anh ấy với vẻ lo lắng trước kỳ thi."
+  },
+  "lucky": {
+   "en": "We were lucky to find a table at the busy restaurant.",
+   "vi": "Chúng tôi may mắn tìm được bàn ở nhà hàng đông khách đó."
+  },
+  "major": {
+   "en": "Traffic is a major problem in this city.",
+   "vi": "Giao thông là một vấn đề lớn ở thành phố này."
+  },
+  "map": {
+   "en": "He used an old map to find the hidden village.",
+   "vi": "Anh ấy dùng một tấm bản đồ cũ để tìm ngôi làng ẩn."
+  },
+  "marry": {
+   "en": "They plan to marry next spring in their hometown.",
+   "vi": "Họ dự định kết hôn vào mùa xuân năm sau ở quê nhà."
+  },
+  "mass": {
+   "en": "A mass of dark clouds gathered before the storm.",
+   "vi": "Một khối mây đen tụ lại trước khi cơn bão đến."
+  },
+  "mathematics, also maths": {
+   "en": "She has always been good at mathematics since childhood.",
+   "vi": "Cô ấy luôn giỏi môn toán từ nhỏ."
+  },
+  "meeting": {
+   "en": "The meeting was moved to three o'clock.",
+   "vi": "Cuộc họp đã được chuyển sang ba giờ."
+  },
+  "minimum": {
+   "en": "The minimum age to apply for this job is eighteen.",
+   "vi": "Tuổi tối thiểu để ứng tuyển công việc này là mười tám."
+  },
+  "ministry": {
+   "en": "The ministry announced new rules for small businesses.",
+   "vi": "Bộ đã công bố những quy định mới cho doanh nghiệp nhỏ."
+  },
+  "missing": {
+   "en": "A page from the report seems to be missing.",
+   "vi": "Có vẻ như một trang trong báo cáo đang bị thiếu."
+  },
+  "mistake": {
+   "en": "He admitted his mistake and apologized to the team.",
+   "vi": "Anh ấy nhận lỗi và xin lỗi cả nhóm."
+  },
+  "mobile": {
+   "en": "Please turn off your mobile phone during the ceremony.",
+   "vi": "Vui lòng tắt điện thoại di động trong buổi lễ."
+  },
+  "moment": {
+   "en": "Wait a moment, I'll be right back.",
+   "vi": "Chờ một chút, tôi sẽ trở lại ngay."
+  },
+  "monitor": {
+   "en": "The nurse will monitor the patient's heart rate overnight.",
+   "vi": "Y tá sẽ theo dõi nhịp tim của bệnh nhân suốt đêm."
+  },
+  "morning": {
+   "en": "I usually drink coffee early in the morning.",
+   "vi": "Tôi thường uống cà phê vào sáng sớm."
+  },
+  "movie": {
+   "en": "We watched a funny movie together last weekend.",
+   "vi": "Chúng tôi đã cùng xem một bộ phim vui vào cuối tuần trước."
+  },
+  "name": {
+   "en": "Please write your full name on the form.",
+   "vi": "Vui lòng viết đầy đủ họ tên của bạn vào đơn."
+  },
+  "national": {
+   "en": "Today is a national holiday, so the shops are closed.",
+   "vi": "Hôm nay là ngày lễ quốc gia nên các cửa hàng đóng cửa."
+  },
+  "near": {
+   "en": "The new cafe is near the train station.",
+   "vi": "Quán cà phê mới nằm gần nhà ga."
+  },
+  "nest": {
+   "en": "A pair of birds built a nest under the roof.",
+   "vi": "Một cặp chim đã làm tổ dưới mái nhà."
+  },
+  "next": {
+   "en": "Turn left at the next traffic light.",
+   "vi": "Rẽ trái ở đèn giao thông kế tiếp."
+  },
+  "nuclear": {
+   "en": "The country is building a new nuclear power plant.",
+   "vi": "Đất nước đang xây một nhà máy điện hạt nhân mới."
+  },
+  "objective": {
+   "en": "The main objective of the meeting is to cut costs.",
+   "vi": "Mục tiêu chính của cuộc họp là cắt giảm chi phí."
+  },
+  "obtain": {
+   "en": "You must obtain permission before entering the lab.",
+   "vi": "Bạn phải xin phép trước khi vào phòng thí nghiệm."
+  },
+  "open": {
+   "en": "The new shopping mall will open next month.",
+   "vi": "Trung tâm thương mại mới sẽ mở vào tháng tới."
+  },
+  "option": {
+   "en": "Buying a used car is a cheaper option for us.",
+   "vi": "Mua xe cũ là một lựa chọn rẻ hơn cho chúng tôi."
+  },
+  "original": {
+   "en": "This painting is the original, not a copy.",
+   "vi": "Bức tranh này là bản gốc, không phải bản sao."
+  },
+  "package": {
+   "en": "The postman left a package at our front door.",
+   "vi": "Người đưa thư để lại một gói hàng trước cửa nhà chúng tôi."
+  },
+  "painful": {
+   "en": "Breaking his arm was a painful experience.",
+   "vi": "Việc bị gãy tay là một trải nghiệm đau đớn."
+  },
+  "painting": {
+   "en": "She spent the whole afternoon painting the fence.",
+   "vi": "Cô ấy đã dành cả buổi chiều để sơn hàng rào."
+  },
+  "parliament": {
+   "en": "The new law was approved by parliament yesterday.",
+   "vi": "Luật mới đã được quốc hội thông qua hôm qua."
+  },
+  "part": {
+   "en": "This chapter is only part of the whole story.",
+   "vi": "Chương này chỉ là một phần của toàn bộ câu chuyện."
+  },
+  "past": {
+   "en": "She doesn't like talking about her past.",
+   "vi": "Cô ấy không thích nói về quá khứ của mình."
+  },
+  "patience": {
+   "en": "Teaching young children requires a lot of patience.",
+   "vi": "Dạy trẻ nhỏ cần rất nhiều sự kiên nhẫn."
+  },
+  "patient": {
+   "en": "The doctor checked on the patient twice a day.",
+   "vi": "Bác sĩ kiểm tra bệnh nhân hai lần một ngày."
+  },
+  "pay": {
+   "en": "I'll pay for dinner tonight, you got it last time.",
+   "vi": "Tối nay tôi sẽ trả tiền ăn, lần trước bạn trả rồi."
+  },
+  "peace": {
+   "en": "After the long war, people finally found peace.",
+   "vi": "Sau cuộc chiến dài, người dân cuối cùng tìm được hòa bình."
+  },
+  "personal": {
+   "en": "This is a personal matter, so I'd rather not discuss it.",
+   "vi": "Đây là việc cá nhân, nên tôi không muốn bàn về nó."
+  },
+  "persuade": {
+   "en": "It took a while to persuade him to join the trip.",
+   "vi": "Phải mất một thời gian để thuyết phục anh ấy tham gia chuyến đi."
+  },
+  "photograph (photo)": {
+   "en": "He took a photograph of the sunset over the sea.",
+   "vi": "Anh ấy đã chụp một tấm ảnh hoàng hôn trên biển."
+  },
+  "pin": {
+   "en": "She used a pin to attach the note to the board.",
+   "vi": "Cô ấy dùng một cái kim để gắn tờ giấy nhắc vào bảng."
+  },
+  "pink": {
+   "en": "The little girl wore a pink dress to the party.",
+   "vi": "Cô bé mặc một chiếc váy màu hồng đến buổi tiệc."
+  },
+  "place": {
+   "en": "This is a quiet place to study on weekends.",
+   "vi": "Đây là một nơi yên tĩnh để học vào cuối tuần."
+  },
+  "plan": {
+   "en": "We have a plan to travel to Da Lat next month.",
+   "vi": "Chúng tôi có kế hoạch đi Đà Lạt vào tháng tới."
+  },
+  "pleasure": {
+   "en": "It was a pleasure to meet your family yesterday.",
+   "vi": "Thật là một niềm vui khi gặp gia đình bạn hôm qua."
+  },
+  "point": {
+   "en": "She made a good point during the discussion.",
+   "vi": "Cô ấy đã đưa ra một quan điểm hay trong buổi thảo luận."
+  },
+  "polish": {
+   "en": "He spent the morning polishing his old bicycle.",
+   "vi": "Anh ấy đã dành cả buổi sáng để đánh bóng chiếc xe đạp cũ."
+  },
+  "polite": {
+   "en": "The staff were polite and answered all our questions.",
+   "vi": "Nhân viên lịch sự và trả lời tất cả câu hỏi của chúng tôi."
+  },
+  "political": {
+   "en": "They avoided talking about political issues at dinner.",
+   "vi": "Họ tránh nói về các vấn đề chính trị trong bữa tối."
+  },
+  "possible": {
+   "en": "Is it possible to finish the report by tomorrow?",
+   "vi": "Có thể hoàn thành báo cáo trước ngày mai không?"
+  },
+  "post": {
+   "en": "I need to post this letter before five o'clock.",
+   "vi": "Tôi cần gửi lá thư này trước năm giờ."
+  },
+  "pot": {
+   "en": "She put the pot of rice on the stove.",
+   "vi": "Cô ấy đặt nồi cơm lên bếp."
+  },
+  "powerful": {
+   "en": "The storm had powerful winds that broke several trees.",
+   "vi": "Cơn bão có gió mạnh làm gãy nhiều cây."
+  },
+  "praise": {
+   "en": "The teacher gave him praise for his hard work.",
+   "vi": "Giáo viên khen ngợi anh ấy vì sự chăm chỉ."
+  },
+  "prefer": {
+   "en": "I prefer tea to coffee in the evening.",
+   "vi": "Tôi thích trà hơn cà phê vào buổi tối."
+  },
+  "premises": {
+   "en": "Visitors must sign in before entering the premises.",
+   "vi": "Khách phải đăng ký trước khi vào khu vực cơ sở."
+  },
+  "prepare": {
+   "en": "She stayed up late to prepare for the exam.",
+   "vi": "Cô ấy thức khuya để chuẩn bị cho kỳ thi."
+  },
+  "preserve": {
+   "en": "The town works hard to preserve its old buildings.",
+   "vi": "Thị trấn nỗ lực bảo tồn những tòa nhà cổ."
+  },
+  "printing": {
+   "en": "The company specializes in printing wedding invitations.",
+   "vi": "Công ty chuyên về in thiếp cưới."
+  },
+  "private": {
+   "en": "He kept his savings account completely private.",
+   "vi": "Anh ấy giữ tài khoản tiết kiệm của mình hoàn toàn riêng tư."
+  },
+  "produce": {
+   "en": "This farm produces fresh vegetables every day.",
+   "vi": "Trang trại này sản xuất rau tươi mỗi ngày."
+  },
+  "proof": {
+   "en": "The police needed more proof before making an arrest.",
+   "vi": "Cảnh sát cần thêm bằng chứng trước khi bắt giữ."
+  },
+  "prove": {
+   "en": "She worked hard to prove she deserved the promotion.",
+   "vi": "Cô ấy làm việc chăm chỉ để chứng minh mình đáng được thăng chức."
+  },
+  "punch": {
+   "en": "He accidentally punched the wall out of frustration.",
+   "vi": "Anh ấy vô tình đấm vào tường vì bực bội."
+  },
+  "punish": {
+   "en": "Parents shouldn't punish children too harshly for small mistakes.",
+   "vi": "Cha mẹ không nên phạt con quá nặng vì những lỗi nhỏ."
+  },
+  "purple": {
+   "en": "The sky turned purple just before sunset.",
+   "vi": "Bầu trời chuyển sang màu tím ngay trước khi hoàng hôn."
+  },
+  "put": {
+   "en": "Please put your shoes by the door.",
+   "vi": "Vui lòng để giày của bạn cạnh cửa."
+  },
+  "quit": {
+   "en": "She decided to quit her job and travel instead.",
+   "vi": "Cô ấy quyết định bỏ việc và đi du lịch."
+  },
+  "receipt": {
+   "en": "Keep the receipt in case you need to return the item.",
+   "vi": "Giữ lại hóa đơn trong trường hợp bạn cần trả hàng."
+  },
+  "recording": {
+   "en": "They listened to a recording of the old interview.",
+   "vi": "Họ nghe lại một bản ghi âm của cuộc phỏng vấn cũ."
+  },
+  "red": {
+   "en": "She painted her nails bright red for the party.",
+   "vi": "Cô ấy sơn móng tay màu đỏ tươi cho buổi tiệc."
+  },
+  "refusal": {
+   "en": "His refusal to apologize made the argument worse.",
+   "vi": "Việc anh ấy từ chối xin lỗi đã khiến cuộc tranh luận tệ hơn."
+  },
+  "regard": {
+   "en": "She has great regard for her former teacher.",
+   "vi": "Cô ấy rất kính trọng người thầy cũ của mình."
+  },
+  "relax": {
+   "en": "After the exam, we went to the beach to relax.",
+   "vi": "Sau kỳ thi, chúng tôi đến biển để nghỉ ngơi."
+  },
+  "remember": {
+   "en": "Do you remember the name of that restaurant?",
+   "vi": "Bạn có nhớ tên nhà hàng đó không?"
+  },
+  "remote": {
+   "en": "They live in a remote village far from the city.",
+   "vi": "Họ sống ở một ngôi làng xa xôi cách thành phố."
+  },
+  "rent": {
+   "en": "The rent for this apartment went up last month.",
+   "vi": "Tiền thuê căn hộ này đã tăng lên tháng trước."
+  },
+  "rented": {
+   "en": "We rented a car for our trip to the mountains.",
+   "vi": "Chúng tôi đã thuê một chiếc xe cho chuyến đi lên núi."
+  },
+  "represent": {
+   "en": "She was chosen to represent her class in the contest.",
+   "vi": "Cô ấy được chọn để đại diện lớp trong cuộc thi."
+  },
+  "request": {
+   "en": "He made a request to change his work schedule.",
+   "vi": "Anh ấy đã đề nghị thay đổi lịch làm việc của mình."
+  },
+  "retired": {
+   "en": "My uncle retired from teaching two years ago.",
+   "vi": "Chú tôi nghỉ hưu khỏi nghề giáo hai năm trước."
+  },
+  "right": {
+   "en": "You have the right to ask for a refund.",
+   "vi": "Bạn có quyền yêu cầu hoàn tiền."
+  },
+  "rope": {
+   "en": "They used a thick rope to pull the boat ashore.",
+   "vi": "Họ dùng một sợi dây thừng chắc để kéo thuyền lên bờ."
+  },
+  "round": {
+   "en": "The table in the kitchen is round, not square.",
+   "vi": "Cái bàn trong nhà bếp là hình tròn, không phải hình vuông."
+  },
+  "ruin": {
+   "en": "Heavy rain could ruin the outdoor concert tonight.",
+   "vi": "Mưa lớn có thể làm hỏng buổi hòa nhạc ngoài trời tối nay."
+  },
+  "ruler": {
+   "en": "She used a ruler to draw a straight line.",
+   "vi": "Cô ấy dùng một cái thước để vẽ một đường thẳng."
+  },
+  "schedule": {
+   "en": "Her work schedule changes every two weeks.",
+   "vi": "Lịch làm việc của cô ấy thay đổi mỗi hai tuần."
+  },
+  "seal": {
+   "en": "Make sure to seal the bag tightly before storing it.",
+   "vi": "Hãy nhớ dán kín túi trước khi cất giữ."
+  },
+  "senior": {
+   "en": "He is a senior manager in the finance department.",
+   "vi": "Anh ấy là quản lý cấp cao ở bộ phận tài chính."
+  },
+  "share": {
+   "en": "Can you share your notes from yesterday's class?",
+   "vi": "Bạn có thể chia sẻ ghi chú của buổi học hôm qua không?"
+  },
+  "shoot": {
+   "en": "The photographer will shoot the wedding next Saturday.",
+   "vi": "Nhiếp ảnh gia sẽ chụp đám cưới vào thứ Bảy tới."
+  },
+  "should": {
+   "en": "You should drink more water during the summer.",
+   "vi": "Bạn nên uống nhiều nước hơn vào mùa hè."
+  },
+  "significant": {
+   "en": "There was a significant increase in sales this quarter.",
+   "vi": "Có một sự gia tăng đáng kể về doanh số trong quý này."
+  },
+  "sincere": {
+   "en": "He gave a sincere apology for being late.",
+   "vi": "Anh ấy đã xin lỗi chân thành vì đến muộn."
+  },
+  "small": {
+   "en": "They live in a small house near the river.",
+   "vi": "Họ sống trong một ngôi nhà nhỏ gần sông."
+  },
+  "son": {
+   "en": "Their son just started his first year at university.",
+   "vi": "Con trai của họ vừa bắt đầu năm nhất đại học."
+  },
+  "speech": {
+   "en": "She gave a short speech at her sister's wedding.",
+   "vi": "Cô ấy đã có một bài phát biểu ngắn tại đám cưới của em gái."
+  },
+  "spicy": {
+   "en": "This noodle soup is a bit too spicy for me.",
+   "vi": "Món mì này cay quá đối với tôi."
+  },
+  "spoken": {
+   "en": "English is widely spoken in the tourism industry here.",
+   "vi": "Tiếng Anh được sử dụng rộng rãi trong ngành du lịch ở đây."
+  },
+  "stand": {
+   "en": "Please stand behind the yellow line while waiting.",
+   "vi": "Vui lòng đứng sau vạch vàng trong khi chờ."
+  },
+  "steep": {
+   "en": "The path up the hill is quite steep.",
+   "vi": "Con đường lên đồi khá dốc."
+  },
+  "step": {
+   "en": "Watch your step, the floor is wet here.",
+   "vi": "Cẩn thận bước đi, sàn ở đây đang ướt."
+  },
+  "still": {
+   "en": "He is still working on the report at midnight.",
+   "vi": "Anh ấy vẫn còn làm báo cáo đến tận nửa đêm."
+  },
+  "sting": {
+   "en": "A bee sting on his arm made him jump.",
+   "vi": "Một vết ong đốt trên tay làm anh ấy bật người."
+  },
+  "straight": {
+   "en": "Walk straight ahead and you'll see the museum.",
+   "vi": "Đi thẳng về phía trước thì bạn sẽ thấy bảo tàng."
+  },
+  "strain": {
+   "en": "Lifting the heavy box put a strain on his back.",
+   "vi": "Việc nâng chiếc hộp nặng đã gây áp lực lên lưng anh ấy."
+  },
+  "stress": {
+   "en": "Too much work has caused her a lot of stress.",
+   "vi": "Quá nhiều công việc đã gây cho cô ấy nhiều căng thẳng."
+  },
+  "stretch": {
+   "en": "Remember to stretch before you start running.",
+   "vi": "Hãy nhớ giãn cơ trước khi bạn bắt đầu chạy."
+  },
+  "strip": {
+   "en": "He tore a strip of paper to mark the page.",
+   "vi": "Anh ấy xé một mảnh giấy nhỏ để đánh dấu trang."
+  },
+  "striped": {
+   "en": "She wore a blue and white striped shirt today.",
+   "vi": "Hôm nay cô ấy mặc một chiếc áo kẻ sọc xanh trắng."
+  },
+  "study": {
+   "en": "They study together at the library every evening.",
+   "vi": "Họ học cùng nhau ở thư viện mỗi tối."
+  },
+  "succeed": {
+   "en": "With enough practice, you will succeed in the exam.",
+   "vi": "Với sự luyện tập đủ nhiều, bạn sẽ thành công trong kỳ thi."
+  },
+  "suitable": {
+   "en": "This jacket isn't suitable for such cold weather.",
+   "vi": "Chiếc áo khoác này không phù hợp với thời tiết lạnh như vậy."
+  },
+  "surprise": {
+   "en": "They planned a surprise party for her birthday.",
+   "vi": "Họ đã lên kế hoạch cho một buổi tiệc bất ngờ vào sinh nhật cô."
+  },
+  "surprising": {
+   "en": "It was surprising how quickly the team finished the project.",
+   "vi": "Thật đáng ngạc nhiên khi nhóm hoàn thành dự án nhanh như vậy."
+  },
+  "sweat": {
+   "en": "He was covered in sweat after the long run.",
+   "vi": "Anh ấy đầy mồ hôi sau khi chạy một chặng dài."
+  },
+  "swimming": {
+   "en": "She goes swimming at the pool every Sunday.",
+   "vi": "Cô ấy đi bơi ở bể mỗi Chủ nhật."
+  },
+  "sympathy": {
+   "en": "Friends sent their sympathy after hearing the sad news.",
+   "vi": "Bạn bè gửi lời chia buồn sau khi nghe tin buồn."
+  },
+  "target": {
+   "en": "The team set a new sales target for next quarter.",
+   "vi": "Nhóm đã đặt một mục tiêu doanh số mới cho quý tới."
+  },
+  "tell": {
+   "en": "Can you tell me how to get to the station?",
+   "vi": "Bạn có thể cho tôi biết cách đến nhà ga không?"
+  },
+  "temporary": {
+   "en": "He took a temporary job while looking for something permanent.",
+   "vi": "Anh ấy nhận một công việc tạm thời trong lúc tìm việc lâu dài."
+  },
+  "thin": {
+   "en": "The ice on the pond was too thin to walk on.",
+   "vi": "Lớp băng trên ao quá mỏng để đi lên."
+  },
+  "time": {
+   "en": "We don't have much time before the train leaves.",
+   "vi": "Chúng tôi không có nhiều thời gian trước khi tàu chạy."
+  },
+  "tire": {
+   "en": "Long meetings always tire me out quickly.",
+   "vi": "Những cuộc họp dài luôn khiến tôi mệt mỏi nhanh chóng."
+  },
+  "tired": {
+   "en": "She felt tired after staying up all night studying.",
+   "vi": "Cô ấy cảm thấy mệt sau khi thức cả đêm học bài."
+  },
+  "total": {
+   "en": "The total cost of the trip was higher than we expected.",
+   "vi": "Tổng chi phí chuyến đi cao hơn chúng tôi dự tính."
+  },
+  "training": {
+   "en": "New employees must complete a week of training.",
+   "vi": "Nhân viên mới phải hoàn thành một tuần đào tạo."
+  },
+  "trial": {
+   "en": "The company offers a free trial for the first month.",
+   "vi": "Công ty cung cấp một tháng dùng thử miễn phí."
+  },
+  "true": {
+   "en": "It's true that she moved here two years ago.",
+   "vi": "Đúng là cô ấy đã chuyển đến đây hai năm trước."
+  },
+  "type": {
+   "en": "What type of music do you usually listen to?",
+   "vi": "Bạn thường nghe loại nhạc nào?"
+  },
+  "ugly": {
+   "en": "He thought the new building looked quite ugly.",
+   "vi": "Anh ấy nghĩ tòa nhà mới trông khá xấu."
+  },
+  "umbrella": {
+   "en": "Take an umbrella with you, it might rain later.",
+   "vi": "Mang theo một cái ô, trời có thể mưa sau đó."
+  },
+  "unable": {
+   "en": "She was unable to attend the meeting due to illness.",
+   "vi": "Cô ấy không thể tham dự cuộc họp do bị bệnh."
+  },
+  "underground": {
+   "en": "The station is three floors underground.",
+   "vi": "Nhà ga nằm ba tầng dưới mặt đất."
+  },
+  "unhappy": {
+   "en": "He looked unhappy about the change in schedule.",
+   "vi": "Anh ấy có vẻ không vui về sự thay đổi lịch trình."
+  },
+  "uniform": {
+   "en": "Students must wear a uniform to school every day.",
+   "vi": "Học sinh phải mặc đồng phục đến trường mỗi ngày."
+  },
+  "unkind": {
+   "en": "It was unkind of him to laugh at her mistake.",
+   "vi": "Anh ấy thật không tốt bụng khi cười nhạo lỗi của cô ấy."
+  },
+  "upsetting": {
+   "en": "Losing the match was upsetting for the whole team.",
+   "vi": "Thua trận đấu khiến cả đội buồn bã."
+  },
+  "venture": {
+   "en": "Starting this small business was a risky venture.",
+   "vi": "Bắt đầu công việc kinh doanh nhỏ này là một mạo hiểm rủi ro."
+  },
+  "visit": {
+   "en": "We plan to visit our grandparents this weekend.",
+   "vi": "Chúng tôi dự định đến thăm ông bà vào cuối tuần này."
+  },
+  "waste": {
+   "en": "Don't waste your time worrying about things you can't control.",
+   "vi": "Đừng lãng phí thời gian lo lắng về những điều bạn không thể kiểm soát."
+  },
+  "watch": {
+   "en": "He likes to watch football matches with his friends.",
+   "vi": "Anh ấy thích xem các trận bóng đá cùng bạn bè."
+  },
+  "website": {
+   "en": "You can find our prices on the company website.",
+   "vi": "Bạn có thể tìm giá cả trên trang web của công ty."
+  },
+  "wheel": {
+   "en": "One wheel of the bicycle was slightly bent.",
+   "vi": "Một bánh xe của chiếc xe đạp bị cong nhẹ."
+  },
+  "whistle": {
+   "en": "The referee blew the whistle to stop the game.",
+   "vi": "Trọng tài thổi còi để dừng trận đấu."
+  },
+  "white": {
+   "en": "She painted the kitchen walls white to make it brighter.",
+   "vi": "Cô ấy sơn tường nhà bếp màu trắng để sáng hơn."
+  },
+  "willingness": {
+   "en": "He showed great willingness to help new employees.",
+   "vi": "Anh ấy thể hiện sự sẵn lòng lớn trong việc giúp nhân viên mới."
+  },
+  "wonderful": {
+   "en": "We had a wonderful time at the beach last weekend.",
+   "vi": "Chúng tôi đã có một khoảng thời gian tuyệt vời ở biển cuối tuần trước."
+  },
+  "wooden": {
+   "en": "They built a small wooden table for the garden.",
+   "vi": "Họ đã làm một cái bàn gỗ nhỏ cho khu vườn."
+  },
+  "worried": {
+   "en": "She looked worried when her son didn't answer the phone.",
+   "vi": "Cô ấy trông lo lắng khi con trai không trả lời điện thoại."
+  },
+  "worship": {
+   "en": "People gather at the temple to worship every morning.",
+   "vi": "Người dân tập trung ở đền để thờ cúng mỗi sáng."
+  },
+  "writer": {
+   "en": "She became a well-known writer after her first novel.",
+   "vi": "Cô ấy trở thành một nhà văn nổi tiếng sau cuốn tiểu thuyết đầu tay."
+  },
+  "wrong": {
+   "en": "I think you took the wrong turn at the last junction.",
+   "vi": "Tôi nghĩ bạn đã rẽ sai ở ngã rẽ vừa rồi."
+  },
+  "yawn": {
+   "en": "She tried to hide a yawn during the long lecture.",
+   "vi": "Cô ấy cố giấu một cái ngáp trong suốt buổi giảng dài."
+  }
+ }
+}

@@ -2,6 +2,7 @@
 // cho viết đoạn văn, kiểm tra (cơ học, không AI) xem đã dùng đủ từ chưa, lưu lịch sử + tính streak.
 
 const WORD_BANK_URL = "data/word-banks/oxford_3000.json";
+const HINTS_URL = "data/word-banks/example_sentences.json";
 const HISTORY_KEY = "writing_history";
 const WORDS_PER_CATEGORY = { n: 2, v: 2, adj: 2 };
 
@@ -151,6 +152,7 @@ function checkWordsUsed(paragraph, words) {
 let allWords = [];
 let todayWords = [];
 let history = [];
+let exampleSentences = {}; // word -> {en, vi}; chỉ phủ ~335 từ của 60 ngày đầu
 
 async function init() {
   const date = todayStr();
@@ -166,6 +168,17 @@ async function init() {
     return;
   }
 
+  // Câu ví dụ là tính năng phụ trợ (chỉ phủ phạm vi nhỏ) — nếu tải lỗi vẫn
+  // cho luyện viết hoạt động bình thường, chỉ là không có nút gợi ý.
+  try {
+    const hintRes = await fetch(HINTS_URL);
+    const hintData = await hintRes.json();
+    exampleSentences = hintData.sentences || {};
+  } catch (err) {
+    console.warn("Không tải được câu ví dụ mẫu:", err);
+    exampleSentences = {};
+  }
+
   const pools = buildCategoryPools(allWords);
   todayWords = pickWordsForDate(pools, date);
 
@@ -177,6 +190,7 @@ async function init() {
 
   document.getElementById("paragraph-input").addEventListener("input", onParagraphInput);
   document.getElementById("save-btn").addEventListener("click", onSave);
+  document.getElementById("word-chips").addEventListener("click", onHintButtonClick);
   onParagraphInput(); // cập nhật trạng thái ban đầu
 }
 
@@ -199,15 +213,39 @@ function renderStreak() {
 function renderWordChips() {
   const wrap = document.getElementById("word-chips");
   wrap.innerHTML = todayWords
-    .map(
-      (w) => `
+    .map((w) => {
+      const hint = exampleSentences[w.word];
+      const hintBlock = hint
+        ? `
+        <button type="button" class="hint-btn" data-hint-for="${escapeHtml(w.word.toLowerCase())}">
+          Xem gợi ý
+        </button>
+        <div class="hint-box hidden">
+          <p class="hint-en">${escapeHtml(hint.en)}</p>
+          <p class="hint-vi">${escapeHtml(hint.vi)}</p>
+        </div>`
+        : `<span class="hint-unavailable">Chưa có câu mẫu cho từ này</span>`;
+
+      return `
       <div class="word-chip" data-word="${w.word.toLowerCase()}">
-        <span class="chip-check">○</span>
-        <span class="chip-word">${w.word}</span>
-        <span class="chip-meaning">${w.meaning}</span>
-      </div>`
-    )
+        <div class="chip-top">
+          <span class="chip-check">○</span>
+          <span class="chip-word">${w.word}</span>
+          <span class="chip-meaning">${w.meaning}</span>
+        </div>
+        ${hintBlock}
+      </div>`;
+    })
     .join("");
+}
+
+function onHintButtonClick(event) {
+  const btn = event.target.closest(".hint-btn");
+  if (!btn) return;
+  const box = btn.nextElementSibling;
+  if (!box || !box.classList.contains("hint-box")) return;
+  const nowHidden = box.classList.toggle("hidden");
+  btn.textContent = nowHidden ? "Xem gợi ý" : "Ẩn gợi ý";
 }
 
 function renderExistingEntryIfAny(date) {

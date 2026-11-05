@@ -372,8 +372,9 @@ body {
 
 .word-chip {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
   padding: 10px 12px;
   border-radius: 10px;
   border: 1px solid var(--border);
@@ -384,6 +385,12 @@ body {
 .word-chip.done {
   background: #dcfce7;
   border-color: var(--success);
+}
+
+.chip-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .chip-check {
@@ -402,6 +409,52 @@ body {
 
 .chip-meaning {
   color: var(--text-muted);
+}
+
+.hint-btn {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 2px 0;
+  cursor: pointer;
+}
+
+.hint-btn:hover {
+  text-decoration: underline;
+}
+
+.hint-box {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-top: 2px;
+}
+
+.hint-box.hidden {
+  display: none;
+}
+
+.hint-en {
+  margin: 0 0 4px;
+  font-style: italic;
+  color: var(--text);
+}
+
+.hint-vi {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.hint-unavailable {
+  align-self: flex-start;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 .paragraph-input {

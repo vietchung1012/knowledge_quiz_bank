@@ -19,7 +19,8 @@ knowledge_quiz_bank/
 │   ├── fields.json       # Danh mục các lĩnh vực hiện có (dùng cho quiz)
 │   ├── toeic_vocab.json  # Bộ câu hỏi mẫu: Từ vựng TOEIC (25 câu)
 │   └── word-banks/
-│       └── oxford_3000.json  # Kho dữ liệu thô: 3396 từ vựng (word/type/phiên âm/nghĩa)
+│       ├── oxford_3000.json         # Kho dữ liệu thô: 3396 từ vựng (word/type/phiên âm/nghĩa)
+│       └── example_sentences.json   # Câu mẫu (EN + dịch VN) cho 335 từ của 60 ngày đầu
 ├── writing.html          # Luyện viết đoạn văn hàng ngày
 ├── js/writing.js         # Logic chọn từ theo ngày, lưu bài viết, tính streak
 └── README.md
@@ -33,6 +34,14 @@ Mỗi ngày hệ thống chọn cố định **6 từ** từ kho `oxford_3000.js
 - Bài viết lưu vào `localStorage` theo từng ngày (key `writing_history`), có thể sửa lại bài của ngày hôm nay, xem lịch sử các ngày trước.
 - Streak (số ngày viết liên tục) tính dựa trên các ngày có bài đã lưu, hiển thị dạng "🔥 N ngày viết liên tục".
 - **Giới hạn đã biết:** kiểm tra "đủ từ" chỉ là so khớp chuỗi con (không phân biệt hoa thường), không xử lý biến thể bất quy tắc (vd từ "go" sẽ không được tính nếu bạn viết "went"). Đây là đánh đổi để giữ 100% cơ học, không cần AI/API.
+
+### Câu mẫu tham khảo ("Xem gợi ý")
+
+Mỗi từ (trong số 6 từ mỗi ngày) có thêm nút **"Xem gợi ý"** — bấm vào mới hiện một câu ví dụ tiếng Anh + dịch tiếng Việt cho riêng từ đó, mặc định ẩn để không làm giảm giá trị tự luyện trước.
+
+- Dữ liệu câu mẫu nằm ở `data/word-banks/example_sentences.json`, do Claude **soạn trực tiếp** (không trích dẫn/lấy từ nguồn khác), không phải sinh tự động hàng loạt.
+- **Chỉ phủ 335 từ** — đúng tập từ duy nhất sẽ xuất hiện trong 60 ngày đầu của vòng xoay (tính từ 2026-11-05), để tránh rủi ro soạn hàng nghìn câu bằng AI mà không kiểm được từng câu. Sẽ mở rộng phạm vi dần theo thời gian.
+- Nếu từ của ngày đó chưa có trong 335 từ này (ví dụ sau ngày 60, hoặc vòng xoay ra từ mới), ô từ đó hiện dòng chữ nhỏ "Chưa có câu mẫu cho từ này" thay cho nút — không tự sinh câu để lấp chỗ trống.
 
 ## Kho dữ liệu từ vựng thô: `data/word-banks/oxford_3000.json`
 
