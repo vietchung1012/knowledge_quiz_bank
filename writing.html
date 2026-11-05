@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luyện viết đoạn văn hàng ngày</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header quiz-header">
+    <a href="index.html" class="back-link">&larr; Về trang chủ</a>
+    <h1>✍️ Luyện viết đoạn văn hàng ngày</h1>
+    <p class="subtitle" id="today-date"></p>
+    <span id="streak-badge" class="streak-badge hidden"></span>
+  </header>
+
+  <main class="container">
+    <section class="writing-card">
+      <h3>Từ vựng hôm nay</h3>
+      <p class="writing-instruction">
+        Viết một đoạn văn ngắn (gợi ý 5-8 câu) bằng tiếng Anh có sử dụng <strong>cả 6 từ</strong> dưới đây.
+        Ô vuông sẽ tự chuyển thành dấu ✓ khi bạn đã dùng từ đó trong bài viết.
+      </p>
+      <div id="word-chips" class="word-chips">
+        <p class="loading">Đang tải từ vựng hôm nay...</p>
+      </div>
+
+      <textarea id="paragraph-input" class="paragraph-input" rows="8"
+        placeholder="Viết đoạn văn của bạn ở đây..."></textarea>
+
+      <div class="writing-footer">
+        <span id="word-count" class="word-count">0 từ</span>
+        <button id="save-btn" class="btn btn-primary" disabled>Lưu bài viết hôm nay</button>
+      </div>
+      <p id="save-note" class="save-note"></p>
+    </section>
+
+    <section class="history-section">
+      <h3>Lịch sử bài viết</h3>
+      <div id="history-list" class="history-list">
+        <p class="loading">Đang tải...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/writing.js"></script>
+</body>
+</html>

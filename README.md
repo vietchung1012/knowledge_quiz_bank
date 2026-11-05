@@ -20,8 +20,19 @@ knowledge_quiz_bank/
 │   ├── toeic_vocab.json  # Bộ câu hỏi mẫu: Từ vựng TOEIC (25 câu)
 │   └── word-banks/
 │       └── oxford_3000.json  # Kho dữ liệu thô: 3396 từ vựng (word/type/phiên âm/nghĩa)
+├── writing.html          # Luyện viết đoạn văn hàng ngày
+├── js/writing.js         # Logic chọn từ theo ngày, lưu bài viết, tính streak
 └── README.md
 ```
+
+## Luyện viết đoạn văn hàng ngày (`writing.html`)
+
+Mỗi ngày hệ thống chọn cố định **6 từ** từ kho `oxford_3000.json` (2 danh từ + 2 động từ + 2 tính từ), dùng seed xác định theo ngày (`YYYY-MM-DD`) — mở lại trong cùng ngày luôn thấy đúng 6 từ đó, sang ngày mới (theo giờ máy người dùng) tự đổi bộ từ khác. Không dùng AI để chấm bài — chỉ kiểm tra cơ học (so khớp văn bản) xem đoạn văn đã chứa đủ 6 từ yêu cầu chưa trước khi cho lưu.
+
+- Lọc bỏ các từ chức năng (đại từ, từ để) khỏi kho danh từ — PDF nguồn đôi khi gắn nhãn "n" cho cả những từ như "he", "it", "this" lẫn với nhãn "pron"/"det"; đã lọc để kho danh từ chỉ còn từ vựng thực chất.
+- Bài viết lưu vào `localStorage` theo từng ngày (key `writing_history`), có thể sửa lại bài của ngày hôm nay, xem lịch sử các ngày trước.
+- Streak (số ngày viết liên tục) tính dựa trên các ngày có bài đã lưu, hiển thị dạng "🔥 N ngày viết liên tục".
+- **Giới hạn đã biết:** kiểm tra "đủ từ" chỉ là so khớp chuỗi con (không phân biệt hoa thường), không xử lý biến thể bất quy tắc (vd từ "go" sẽ không được tính nếu bạn viết "went"). Đây là đánh đổi để giữ 100% cơ học, không cần AI/API.
 
 ## Kho dữ liệu từ vựng thô: `data/word-banks/oxford_3000.json`
 

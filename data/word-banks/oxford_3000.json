@@ -5,8 +5,9 @@
  "totalWords": 3396,
  "notes": [
   "Dữ liệu được trích xuất cơ học từ file PDF gốc, không phải do AI tự bịa nội dung.",
-  "Khoảng 683/3396 mục (~20%) có trường 'pronunciation' để trống do PDF gốc ghi phiên âm bằng chữ thường không dùng ký hiệu IPA (ví dụ: end, pound) — phần phiên âm trong các trường hợp này vẫn còn nằm ở đầu chuỗi 'meaning', không bị mất dữ liệu, chỉ chưa tách riêng được.",
+  "Khoảng 665/3396 mục (~20%) có trường 'pronunciation' để trống do PDF gốc ghi phiên âm bằng chữ thường không dùng ký hiệu IPA (ví dụ: end, pound) — phần phiên âm trong các trường hợp này vẫn còn nằm ở đầu chuỗi 'meaning', không bị mất dữ liệu, chỉ chưa tách riêng được.",
   "47 mục là cụm từ/thành ngữ (vd: 'take part in', 'in case of') được chuẩn hoá thủ công do không có nhãn loại từ đơn trong PDF gốc.",
+  "Bản cập nhật 2026-11-05: đã sửa lỗi 24 mục bị gắn sai type do PDF gốc dùng viết tắt 'pro' thay vì 'pron' cho đại từ (vd: he, she, it, this, what) — trước đó các từ này bị thiếu nhãn 'pron' và lẫn ký tự thừa vào đầu chuỗi meaning.",
   "Đây là kho dữ liệu từ điển thô — CHƯA phải câu hỏi quiz. Cần bước xử lý riêng để sinh câu hỏi trắc nghiệm từ kho này."
  ],
  "words": [
@@ -2372,7 +2373,7 @@
   {
    "no": 338,
    "word": "blonde (blond)",
-   "type": "adj, n, adj",
+   "type": "adj, n",
    "pronunciation": "blɔnd",
    "meaning": "hoe vàng, mái tóc hoe vàng"
   },
@@ -6593,9 +6594,9 @@
   {
    "no": 941,
    "word": "each other",
-   "type": "n",
+   "type": "n, pron",
    "pronunciation": "",
-   "meaning": ", pro nhau, lẫn nhau"
+   "meaning": "nhau, lẫn nhau"
   },
   {
    "no": 942,
@@ -9715,9 +9716,9 @@
   {
    "no": 1387,
    "word": "he",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro hi: nó, anh ấy, ông ấy"
+   "type": "n, pron",
+   "pronunciation": "hi:",
+   "meaning": "nó, anh ấy, ông ấy"
   },
   {
    "no": 1388,
@@ -11227,9 +11228,9 @@
   {
    "no": 1603,
    "word": "it",
-   "type": "n, det",
+   "type": "n, det, pron",
    "pronunciation": "",
-   "meaning": ", pro it cái đó, điều đó, con vật đó"
+   "meaning": "it cái đó, điều đó, con vật đó"
   },
   {
    "no": 1604,
@@ -12711,9 +12712,9 @@
   {
    "no": 1815,
    "word": "me",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro mi: tôi, tao, tớ"
+   "type": "n, pron",
+   "pronunciation": "mi:",
+   "meaning": "tôi, tao, tớ"
   },
   {
    "no": 1816,
@@ -13229,9 +13230,9 @@
   {
    "no": 1889,
    "word": "most",
-   "type": "det",
+   "type": "det, pron, n, adv",
    "pronunciation": "",
-   "meaning": ", pro, n, adv moust lớn nhất, nhiều nhất; nhất, hơn cả"
+   "meaning": "moust lớn nhất, nhiều nhất; nhất, hơn cả"
   },
   {
    "no": 1890,
@@ -13796,9 +13797,9 @@
   {
    "no": 1970,
    "word": "none",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro nʌn không ai, không người, vật gì"
+   "type": "n, pron",
+   "pronunciation": "nʌn",
+   "meaning": "không ai, không người, vật gì"
   },
   {
    "no": 1971,
@@ -15350,9 +15351,9 @@
   {
    "no": 2192,
    "word": "plenty",
-   "type": "n, adv, n, det",
+   "type": "n, adv, det, pron",
    "pronunciation": "",
-   "meaning": ", pro plenti nhiều (s.k.lượng); chỉ sự thưa; sự sung túc, sự p.phú"
+   "meaning": "plenti nhiều (s.k.lượng); chỉ sự thưa; sự sung túc, sự p.phú"
   },
   {
    "no": 2193,
@@ -15371,7 +15372,7 @@
   {
    "no": 2195,
    "word": "plus",
-   "type": "n, adj ,conj, prep",
+   "type": "n, adj, conj, prep",
    "pronunciation": "plʌs",
    "meaning": "cộng với (số, người...); dấu cộng; cộng, thêm vào"
   },
@@ -18640,9 +18641,9 @@
   {
    "no": 2662,
    "word": "she",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro ʃi: nó, bà ấy, chị ấy, cô ấy..."
+   "type": "n, pron",
+   "pronunciation": "ʃi:",
+   "meaning": "nó, bà ấy, chị ấy, cô ấy..."
   },
   {
    "no": 2663,
@@ -21076,16 +21077,16 @@
   {
    "no": 3010,
    "word": "theirs",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro ðeəz của chúng, của chúng nó, của họ"
+   "type": "n, pron",
+   "pronunciation": "ðeəz",
+   "meaning": "của chúng, của chúng nó, của họ"
   },
   {
    "no": 3011,
    "word": "them",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro ðem chúng, chúng nó, họ"
+   "type": "n, pron",
+   "pronunciation": "ðem",
+   "meaning": "chúng, chúng nó, họ"
   },
   {
    "no": 3012,
@@ -21097,9 +21098,9 @@
   {
    "no": 3013,
    "word": "themselves",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro ðəm'selvz tự chúng, tự họ, tự"
+   "type": "n, pron",
+   "pronunciation": "ðəm'selvz",
+   "meaning": "tự chúng, tự họ, tự"
   },
   {
    "no": 3014,
@@ -21132,9 +21133,9 @@
   {
    "no": 3018,
    "word": "they",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro ðei chúng, chúng nó, họ; những cái ấy"
+   "type": "n, pron",
+   "pronunciation": "ðei",
+   "meaning": "chúng, chúng nó, họ; những cái ấy"
   },
   {
    "no": 3019,
@@ -21202,9 +21203,9 @@
   {
    "no": 3028,
    "word": "this",
-   "type": "n, det",
-   "pronunciation": "",
-   "meaning": ", pro ðis cái này, điều này, việc này"
+   "type": "n, det, pron",
+   "pronunciation": "ðis",
+   "meaning": "cái này, điều này, việc này"
   },
   {
    "no": 3029,
@@ -22490,9 +22491,9 @@
   {
    "no": 3212,
    "word": "us",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro ʌs chúng tôi, chúng ta; tôi và anh"
+   "type": "n, pron",
+   "pronunciation": "ʌs",
+   "meaning": "chúng tôi, chúng ta; tôi và anh"
   },
   {
    "no": 3213,
@@ -23134,16 +23135,16 @@
   {
    "no": 3304,
    "word": "what",
-   "type": "n, det",
-   "pronunciation": "",
-   "meaning": ", pro wʌt gì, thế nào"
+   "type": "n, det, pron",
+   "pronunciation": "wʌt",
+   "meaning": "gì, thế nào"
   },
   {
    "no": 3305,
    "word": "whatever",
-   "type": "n, det",
-   "pronunciation": "",
-   "meaning": ", pro wɔt´evə bất cứ thứ gì, bất kể thứ gì"
+   "type": "n, det, pron",
+   "pronunciation": "wɔt´evə",
+   "meaning": "bất cứ thứ gì, bất kể thứ gì"
   },
   {
    "no": 3306,
@@ -23197,9 +23198,9 @@
   {
    "no": 3313,
    "word": "which",
-   "type": "n, det",
-   "pronunciation": "",
-   "meaning": ", pro witʃ nào, bất cứ.. nào; ấy, đó"
+   "type": "n, det, pron",
+   "pronunciation": "witʃ",
+   "meaning": "nào, bất cứ.. nào; ấy, đó"
   },
   {
    "no": 3314,
@@ -23239,16 +23240,16 @@
   {
    "no": 3319,
    "word": "who",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro hu: ai, người nào, kẻ nào, người như thế nào"
+   "type": "n, pron",
+   "pronunciation": "hu:",
+   "meaning": "ai, người nào, kẻ nào, người như thế nào"
   },
   {
    "no": 3320,
    "word": "whoever",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro hu:'ev ai, người nào, bất cứ ai, bất cứ người nào, dù ai"
+   "type": "n, pron",
+   "pronunciation": "hu:'ev",
+   "meaning": "ai, người nào, bất cứ ai, bất cứ người nào, dù ai"
   },
   {
    "no": 3321,
@@ -23260,16 +23261,16 @@
   {
    "no": 3322,
    "word": "whom",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro hu:m ai, người nào; người mà"
+   "type": "n, pron",
+   "pronunciation": "hu:m",
+   "meaning": "ai, người nào; người mà"
   },
   {
    "no": 3323,
    "word": "whose",
-   "type": "n, det",
-   "pronunciation": "",
-   "meaning": ", pro hu:z của ai"
+   "type": "n, det, pron",
+   "pronunciation": "hu:z",
+   "meaning": "của ai"
   },
   {
    "no": 3324,
@@ -23736,9 +23737,9 @@
   {
    "no": 3390,
    "word": "yours",
-   "type": "n",
-   "pronunciation": "",
-   "meaning": ", pro jo:z cái của anh, cái của chị, cái của ngài, cái của mày; cái của các anh, cái của các chị, cái của các ngài, cái của chúng mày"
+   "type": "n, pron",
+   "pronunciation": "jo:z",
+   "meaning": "cái của anh, cái của chị, cái của ngài, cái của mày; cái của các anh, cái của các chị, cái của các ngài, cái của chúng mày"
   },
   {
    "no": 3391,
