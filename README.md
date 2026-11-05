@@ -8,23 +8,26 @@ Ngân hàng bài tập trắc nghiệm kiểm tra kiến thức, dạng web tĩn
 
 ```
 knowledge_quiz_bank/
-├── index.html                      # Trang chủ — danh sách LĨNH VỰC để chọn
+├── index.html                      # Trang chủ — danh sách lĩnh vực + danh sách gọn mọi bài
 ├── css/
-│   └── style.css                    # Giao diện chung, dùng cho mọi trang (gốc + trong từng lĩnh vực)
+│   └── style.css                    # Giao diện chung (màu/font/nav/danh sách), dùng cho mọi trang
 ├── js/
-│   └── home.js                      # Logic trang chủ: đọc data/categories.json
+│   ├── home.js                      # Logic trang chủ: đọc data/categories.json, gộp danh sách mỗi lĩnh vực
+│   ├── navbar.js                    # Dùng chung mọi trang: dựng thanh nav từ categories.json, xử lý ô tìm kiếm
+│   └── catalog.js                   # Dùng chung: gộp features.json + fields.json của 1 lĩnh vực thành 1 danh sách
 ├── data/
-│   └── categories.json              # Danh mục lĩnh vực hiện có (vd English) — trang chủ đọc file này
+│   └── categories.json              # Danh mục lĩnh vực hiện có (vd English) — trang chủ + navbar.js đọc file này
 │
 ├── English/                         # Lĩnh vực: Tiếng Anh
-│   ├── index.html                    # Mục lục lĩnh vực: Luyện viết + danh sách bài trắc nghiệm
+│   ├── index.html                    # Mục lục lĩnh vực: danh sách gọn (Luyện viết + các bài trắc nghiệm)
 │   ├── quiz.html                      # Trang làm bài trắc nghiệm
 │   ├── writing.html                   # Luyện viết đoạn văn hàng ngày
 │   ├── js/
-│   │   ├── index.js                    # Logic mục lục lĩnh vực: đọc data/fields.json
+│   │   ├── index.js                    # Logic trang mục lục: dùng catalog.js để gộp + lọc tìm kiếm
 │   │   ├── quiz.js                     # Logic làm bài, chấm điểm
 │   │   └── writing.js                  # Logic chọn từ theo ngày, lưu bài viết, tính streak, gợi ý câu mẫu
 │   └── data/
+│       ├── features.json               # Mục tĩnh không phải quiz (hiện có: Luyện viết)
 │       ├── fields.json                 # Danh mục bài trắc nghiệm trong lĩnh vực này
 │       ├── toeic_vocab.json            # Bộ câu hỏi mẫu: Từ vựng TOEIC (25 câu)
 │       └── word-banks/
@@ -36,12 +39,18 @@ knowledge_quiz_bank/
 
 ⚠️ Repo đã được tái cấu trúc (trước đây `quiz.html`/`writing.html`/dữ liệu nằm thẳng ở gốc) — các đường link cũ ở gốc (`quiz.html`, `writing.html`...) **không còn hoạt động**, đã chuyển hết sang trong `English/`.
 
+## Giao diện
+
+Phong cách "trang web học tập" gọn, tối giản: giấy thi trắng ngà + mực xanh than, 1 màu nhấn xanh rêu (`#28503f`) cho link/nút, tiêu đề dùng font serif **Lora**, phần còn lại dùng font **Be Vietnam Pro** (thiết kế riêng cho tiếng Việt). Không dùng thẻ card/bo góc/đổ bóng cho danh sách bài — thay bằng danh sách link chữ gọn, nhóm theo lĩnh vực, giống kiểu một trang mục lục bài giảng.
+
+Thanh nav (logo + tab lĩnh vực + ô tìm kiếm) xuất hiện trên mọi trang, tự dựng từ `data/categories.json` qua `js/navbar.js` — thêm lĩnh vực mới thì tab mới tự hiện, không cần sửa HTML. Ô tìm kiếm chỉ lọc trực tiếp trên trang hiện tại (trang chủ: lọc trong mọi lĩnh vực; trang mục lục 1 lĩnh vực: lọc trong lĩnh vực đó) — không có tìm kiếm toàn văn.
+
 ## Cách hoạt động (điều hướng)
 
-1. `index.html` (gốc) đọc `data/categories.json`, hiển thị danh sách lĩnh vực dạng thẻ.
-2. Chọn một lĩnh vực (vd "Tiếng Anh") sẽ chuyển sang trang mục lục của lĩnh vực đó, ví dụ `English/index.html`.
-3. Trang mục lục của lĩnh vực hiển thị các tính năng/bài trong lĩnh vực đó — hiện tại gồm **Luyện viết đoạn văn** (link tĩnh) và **danh sách bài trắc nghiệm** (đọc từ `English/data/fields.json`, hiển thị dạng thẻ).
-4. Chọn một bài trắc nghiệm sẽ chuyển sang `English/quiz.html?field=<id>` — `quiz.js` đọc đúng bộ câu hỏi tương ứng, xáo thứ tự, cho làm từng câu, chấm điểm, hiện kết quả + ôn lại câu sai.
+1. `index.html` (gốc) đọc `data/categories.json`; với mỗi lĩnh vực, gọi `loadCatalogItems()` (xem `js/catalog.js`) để lấy danh sách bài trong lĩnh vực đó, hiển thị thành từng khối "danh sách gọn".
+2. Bấm vào một bài (vd "Từ vựng TOEIC") sẽ đi thẳng tới trang đó, vd `English/quiz.html?field=toeic_vocab` — không cần qua trang mục lục trung gian.
+3. Trang mục lục riêng của từng lĩnh vực (vd `English/index.html`) hiển thị đúng danh sách đó nhưng chỉ scope trong 1 lĩnh vực — hữu ích khi bấm tab lĩnh vực trên thanh nav, hoặc khi lĩnh vực có nhiều bài không muốn liệt kê hết ở trang chủ.
+4. `quiz.js` đọc đúng bộ câu hỏi tương ứng, xáo thứ tự, cho làm từng câu, chấm điểm, hiện kết quả + ôn lại câu sai.
 5. Kết quả mỗi lần làm, và bài viết hàng ngày, được lưu tạm vào `localStorage` của trình duyệt (không có backend, không cần tài khoản).
 
 ## Luyện viết đoạn văn hàng ngày (`English/writing.html`)
@@ -74,7 +83,7 @@ Giới hạn đã biết (ghi rõ trong field `notes` của chính file JSON):
 
 ## Cách thêm một lĩnh vực mới (vd Lịch sử, Khoa học...)
 
-1. Tạo thư mục mới ở gốc, vd `History/`, với cấu trúc tương tự `English/` (`index.html`, `js/index.js`, `data/fields.json`, các bộ câu hỏi riêng).
+1. Tạo thư mục mới ở gốc, vd `History/`, với cấu trúc tương tự `English/` (`index.html`, `js/index.js`, `data/fields.json` và/hoặc `data/features.json`, các bộ câu hỏi riêng). Copy `English/index.html` làm mẫu rồi đổi lại tiêu đề/icon/đường dẫn `data-base`.
 2. Thêm một mục vào `data/categories.json` (ở gốc):
 
 ```json
@@ -83,11 +92,13 @@ Giới hạn đã biết (ghi rõ trong field `notes` của chính file JSON):
   "title": "Lịch sử",
   "icon": "📜",
   "description": "Mô tả ngắn",
-  "path": "History/index.html"
+  "path": "History/index.html",
+  "baseDir": "History/",
+  "dataDir": "History/data"
 }
 ```
 
-Trang chủ sẽ tự động hiển thị lĩnh vực mới — không cần sửa code HTML/CSS/JS ở gốc.
+Trang chủ và thanh nav sẽ tự động hiển thị lĩnh vực mới — không cần sửa code HTML/CSS/JS ở gốc.
 
 ## Cách thêm một bài trắc nghiệm mới trong một lĩnh vực đã có (vd thêm vào English/)
 
@@ -126,11 +137,28 @@ Trang chủ sẽ tự động hiển thị lĩnh vực mới — không cần s�
 }
 ```
 
-Trang mục lục `English/index.html` sẽ tự động hiển thị bài mới — không cần sửa code.
+Trang chủ và trang mục lục `English/index.html` sẽ tự động hiển thị bài mới — không cần sửa code.
+
+## Cách thêm một mục tĩnh (không phải quiz) vào lĩnh vực đã có
+
+Dùng khi muốn thêm 1 trang tính năng kiểu như "Luyện viết" (không phải trắc nghiệm trả lời đúng/sai). Thêm 1 mục vào `English/data/features.json`:
+
+```json
+{
+  "id": "ten_muc",
+  "title": "Tên hiển thị",
+  "description": "Mô tả ngắn",
+  "href": "ten-trang.html",
+  "meta": "Ghi chú ngắn (tuỳ chọn, vd 'Luyện tập hàng ngày')"
+}
+```
+
+`href` là đường dẫn tương đối trong thư mục lĩnh vực đó (vd `English/`). Trang chủ và trang mục lục sẽ tự hiển thị.
 
 ## Trạng thái hiện tại
 
 - [x] Khung giao diện web tĩnh (trang chủ theo lĩnh vực → mục lục lĩnh vực → bài cụ thể)
+- [x] Giao diện "trang web học tập": nav + tìm kiếm dùng chung, danh sách gọn theo lĩnh vực, bộ màu/font riêng (Lora + Be Vietnam Pro)
 - [x] Lĩnh vực Tiếng Anh: 1 bài trắc nghiệm mẫu (Từ vựng TOEIC, 25 câu, do Claude soạn — **cần Chung rà soát lại nội dung trước khi dùng chính thức**) + luyện viết đoạn văn hàng ngày + gợi ý câu mẫu (335/3396 từ)
 - [ ] Rà soát/chỉnh sửa nội dung câu hỏi TOEIC
 - [ ] Soạn thêm câu mẫu cho các từ ngoài 60 ngày đầu

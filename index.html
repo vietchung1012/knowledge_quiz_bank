@@ -4,17 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ngân hàng bài tập kiểm tra kiến thức</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>🧠 Ngân hàng bài tập kiểm tra kiến thức</h1>
-    <p class="subtitle">Chọn một lĩnh vực bên dưới để bắt đầu.</p>
+  <header class="site-nav" id="site-nav" data-base="">
+    <div class="site-nav-inner">
+      <a class="nav-brand" href="index.html">
+        <svg class="nav-mark" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h16v20l-8-7-8 7V1z"/></svg>
+        Ngân hàng kiến thức
+      </a>
+      <div class="nav-tabs" id="nav-tabs"></div>
+      <div class="nav-search" id="nav-search">
+        <button class="nav-search-toggle" id="nav-search-toggle" type="button" aria-label="Tìm kiếm">🔍</button>
+        <input class="nav-search-input" id="nav-search-input" type="text" placeholder="Tìm bài..." autocomplete="off">
+      </div>
+    </div>
   </header>
 
   <main class="container">
-    <p class="section-label">Lĩnh vực</p>
-    <div id="field-grid" class="field-grid">
+    <p class="intro-line">Chọn một lĩnh vực bên dưới, hoặc gõ tìm trực tiếp để vào thẳng bài bạn cần.</p>
+
+    <div id="catalog-root">
       <p class="loading">Đang tải danh sách lĩnh vực...</p>
     </div>
   </main>
@@ -23,6 +36,8 @@
     <p>Dự án đang được phát triển — sẽ bổ sung thêm nhiều lĩnh vực theo thời gian.</p>
   </footer>
 
+  <script src="js/catalog.js"></script>
+  <script src="js/navbar.js"></script>
   <script src="js/home.js"></script>
 </body>
 </html>

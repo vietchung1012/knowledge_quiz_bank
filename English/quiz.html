@@ -4,9 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Làm bài trắc nghiệm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <header class="site-nav" id="site-nav" data-base="../">
+    <div class="site-nav-inner">
+      <a class="nav-brand" href="../index.html">
+        <svg class="nav-mark" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h16v20l-8-7-8 7V1z"/></svg>
+        Ngân hàng kiến thức
+      </a>
+      <div class="nav-tabs" id="nav-tabs"></div>
+    </div>
+  </header>
+
   <header class="site-header quiz-header">
     <a href="index.html" class="back-link">&larr; Về Tiếng Anh</a>
     <h1 id="quiz-title">Đang tải...</h1>
@@ -33,6 +46,7 @@
     </div>
   </main>
 
+  <script src="../js/navbar.js"></script>
   <script src="js/quiz.js"></script>
 </body>
 </html>

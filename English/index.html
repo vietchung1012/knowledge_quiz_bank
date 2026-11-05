@@ -4,29 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tiếng Anh — Ngân hàng bài tập kiểm tra kiến thức</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <header class="site-nav" id="site-nav" data-base="../">
+    <div class="site-nav-inner">
+      <a class="nav-brand" href="../index.html">
+        <svg class="nav-mark" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h16v20l-8-7-8 7V1z"/></svg>
+        Ngân hàng kiến thức
+      </a>
+      <div class="nav-tabs" id="nav-tabs"></div>
+      <div class="nav-search" id="nav-search">
+        <button class="nav-search-toggle" id="nav-search-toggle" type="button" aria-label="Tìm kiếm">🔍</button>
+        <input class="nav-search-input" id="nav-search-input" type="text" placeholder="Tìm bài..." autocomplete="off">
+      </div>
+    </div>
+  </header>
+
   <header class="site-header">
     <a href="../index.html" class="back-link">&larr; Về trang chủ</a>
-    <h1>🇬🇧 Tiếng Anh</h1>
+    <h1 class="page-title">🇬🇧 Tiếng Anh</h1>
     <p class="subtitle">Luyện viết hàng ngày hoặc làm bài trắc nghiệm từ vựng.</p>
   </header>
 
   <main class="container">
-    <div class="feature-links">
-      <a class="feature-link-card" href="writing.html">
-        <span class="feature-link-icon">✍️</span>
-        <span>
-          <h3>Luyện viết đoạn văn hàng ngày</h3>
-          <p>Mỗi ngày 6 từ vựng mới, viết đoạn văn ngắn, có gợi ý câu mẫu, theo dõi streak ngày viết liên tục.</p>
-        </span>
-      </a>
-    </div>
-
-    <p class="section-label">Bài trắc nghiệm</p>
-    <div id="field-grid" class="field-grid">
-      <p class="loading">Đang tải danh sách bài trắc nghiệm...</p>
+    <div id="catalog-root">
+      <p class="loading">Đang tải danh sách bài...</p>
     </div>
   </main>
 
@@ -34,6 +40,8 @@
     <p>Dự án đang được phát triển — sẽ bổ sung thêm nhiều bài trong lĩnh vực này theo thời gian.</p>
   </footer>
 
+  <script src="../js/catalog.js"></script>
+  <script src="../js/navbar.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>

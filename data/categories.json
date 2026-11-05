@@ -4,6 +4,8 @@
     "title": "Tiếng Anh",
     "icon": "🇬🇧",
     "description": "Từ vựng TOEIC (trắc nghiệm) và luyện viết đoạn văn hàng ngày.",
-    "path": "English/index.html"
+    "path": "English/index.html",
+    "baseDir": "English/",
+    "dataDir": "English/data"
   }
 ]
