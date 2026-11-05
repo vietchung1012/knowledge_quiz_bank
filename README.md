@@ -16,10 +16,25 @@ knowledge_quiz_bank/
 │   ├── home.js           # Logic trang chủ
 │   └── quiz.js           # Logic làm bài, chấm điểm
 ├── data/
-│   ├── fields.json       # Danh mục các lĩnh vực hiện có
-│   └── toeic_vocab.json  # Bộ câu hỏi mẫu: Từ vựng TOEIC (25 câu)
+│   ├── fields.json       # Danh mục các lĩnh vực hiện có (dùng cho quiz)
+│   ├── toeic_vocab.json  # Bộ câu hỏi mẫu: Từ vựng TOEIC (25 câu)
+│   └── word-banks/
+│       └── oxford_3000.json  # Kho dữ liệu thô: 3396 từ vựng (word/type/phiên âm/nghĩa)
 └── README.md
 ```
+
+## Kho dữ liệu từ vựng thô: `data/word-banks/oxford_3000.json`
+
+Trích xuất từ file nguồn `source/english/words/3000.pdf` ("Oxford 3000 – Từ vựng tiếng Anh thông dụng nhất", nguồn: effortlessenglishclub.edu.vn) bằng **script tự động** (không phải AI tự soạn nội dung) — mỗi mục gồm `no` (số thứ tự gốc trong PDF), `word`, `type`, `pronunciation`, `meaning`.
+
+**Đây là kho dữ liệu từ điển thô, CHƯA phải câu hỏi quiz** — chưa được nối vào `index.html`/`quiz.html`. Cần một bước xử lý riêng (sinh câu hỏi trắc nghiệm tự động từ kho này) trước khi hiển thị cho người dùng — bước đó **chưa làm**, cần thống nhất cách làm trước.
+
+Giới hạn đã biết (ghi rõ trong field `notes` của chính file JSON):
+- Tổng 3396 mục (nhiều hơn 3000 vì PDF gốc đánh số luôn cả một số cụm từ/thành ngữ, không chỉ từ đơn)
+- ~19% số mục có `pronunciation` để trống — do PDF gốc ghi phiên âm bằng chữ thường (không dùng ký hiệu IPA) nên script không tách được khỏi `meaning`; dữ liệu không mất, chỉ còn dính ở đầu chuỗi `meaning`
+- 47 mục là cụm từ/thành ngữ được chuẩn hoá thủ công (không có nhãn loại từ trong PDF gốc)
+
+⚠️ **Lưu ý về bản quyền:** file PDF nguồn do effortlessenglishclub.edu.vn biên soạn/trình bày — tôi chưa đưa file PDF gốc vào repo (chỉ đưa dữ liệu đã trích xuất dạng JSON) để tránh rủi ro phát tán lại nguyên bản tài liệu của bên thứ ba. Chung nên cân nhắc việc này nếu định công khai repo rộng rãi.
 
 ## Cách hoạt động
 
