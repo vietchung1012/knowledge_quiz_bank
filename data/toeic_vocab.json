@@ -1,0 +1,217 @@
+{
+  "id": "toeic_vocab",
+  "title": "Từ vựng TOEIC",
+  "description": "25 câu hỏi trắc nghiệm về từ vựng tiếng Anh thường gặp trong đề thi TOEIC.",
+  "questions": [
+    {
+      "id": "tv001",
+      "question": "\"Compensation\" có nghĩa gần nhất với từ nào?",
+      "options": ["Punishment", "Payment", "Requirement", "Decoration"],
+      "answer": 1,
+      "explanation": "Compensation = khoản tiền đền bù/lương thưởng, gần nghĩa với payment."
+    },
+    {
+      "id": "tv002",
+      "question": "The company's revenue ___ by 20% last quarter.",
+      "options": ["increased", "increasing", "increase", "to increase"],
+      "answer": 0,
+      "explanation": "Câu ở thì quá khứ đơn, cần động từ chia quá khứ: increased."
+    },
+    {
+      "id": "tv003",
+      "question": "\"Reliable\" có nghĩa gần nhất với từ nào?",
+      "options": ["Trustworthy", "Expensive", "Flexible", "Complicated"],
+      "answer": 0,
+      "explanation": "Reliable = đáng tin cậy, gần nghĩa với trustworthy."
+    },
+    {
+      "id": "tv004",
+      "question": "Please submit the report by the ___.",
+      "options": ["deadline", "headline", "outline", "guideline"],
+      "answer": 0,
+      "explanation": "Deadline = hạn chót, phù hợp ngữ cảnh nộp báo cáo."
+    },
+    {
+      "id": "tv005",
+      "question": "\"Negotiate\" có nghĩa là gì?",
+      "options": [
+        "To argue loudly",
+        "To discuss in order to reach an agreement",
+        "To ignore completely",
+        "To delay a task"
+      ],
+      "answer": 1,
+      "explanation": "Negotiate = đàm phán, thảo luận để đạt được thỏa thuận."
+    },
+    {
+      "id": "tv006",
+      "question": "The meeting has been ___ to next Monday.",
+      "options": ["postponed", "attended", "invited", "arrived"],
+      "answer": 0,
+      "explanation": "Postponed = bị hoãn lại, phù hợp với ngữ cảnh dời lịch họp."
+    },
+    {
+      "id": "tv007",
+      "question": "\"Candidate\" dùng để chỉ ai?",
+      "options": [
+        "A person applying for a job",
+        "A type of document",
+        "A meeting room",
+        "A type of software"
+      ],
+      "answer": 0,
+      "explanation": "Candidate = ứng viên, người ứng tuyển vào một vị trí."
+    },
+    {
+      "id": "tv008",
+      "question": "Please find ___ the invoice for your reference.",
+      "options": ["attached", "attaching", "attach", "attachment"],
+      "answer": 0,
+      "explanation": "\"Please find attached\" là cụm cố định dùng khi gửi kèm tài liệu qua email."
+    },
+    {
+      "id": "tv009",
+      "question": "\"Efficient\" có nghĩa gần nhất với từ nào?",
+      "options": ["Slow", "Productive", "Expensive", "Careless"],
+      "answer": 1,
+      "explanation": "Efficient = hiệu quả, làm việc năng suất, gần nghĩa với productive."
+    },
+    {
+      "id": "tv010",
+      "question": "The warehouse is responsible for ___ the inventory.",
+      "options": ["managing", "manage", "management", "manager"],
+      "answer": 0,
+      "explanation": "Sau \"responsible for\" dùng V-ing: managing."
+    },
+    {
+      "id": "tv011",
+      "question": "\"Reimburse\" có nghĩa là gì?",
+      "options": [
+        "To pay back money spent",
+        "To hire someone",
+        "To cancel an order",
+        "To deliver goods"
+      ],
+      "answer": 0,
+      "explanation": "Reimburse = hoàn trả tiền đã chi (ví dụ: công ty hoàn tiền công tác phí)."
+    },
+    {
+      "id": "tv012",
+      "question": "All employees must comply ___ the safety regulations.",
+      "options": ["with", "to", "for", "on"],
+      "answer": 0,
+      "explanation": "Cụm cố định: comply with = tuân thủ."
+    },
+    {
+      "id": "tv013",
+      "question": "\"Itinerary\" dùng để chỉ cái gì?",
+      "options": ["A travel schedule", "A contract", "A receipt", "A job title"],
+      "answer": 0,
+      "explanation": "Itinerary = lịch trình di chuyển/du lịch."
+    },
+    {
+      "id": "tv014",
+      "question": "The new policy will ___ effect next month.",
+      "options": ["take", "make", "do", "have"],
+      "answer": 0,
+      "explanation": "Cụm cố định: take effect = có hiệu lực."
+    },
+    {
+      "id": "tv015",
+      "question": "\"Feasible\" có nghĩa gần nhất với từ nào?",
+      "options": ["Impossible", "Practical", "Expensive", "Risky"],
+      "answer": 1,
+      "explanation": "Feasible = khả thi, gần nghĩa với practical."
+    },
+    {
+      "id": "tv016",
+      "question": "She was promoted ___ senior manager.",
+      "options": ["to", "for", "as", "in"],
+      "answer": 0,
+      "explanation": "Cụm cố định: be promoted to + chức danh."
+    },
+    {
+      "id": "tv017",
+      "question": "\"Vendor\" dùng để chỉ ai?",
+      "options": [
+        "A buyer",
+        "A seller or supplier",
+        "An employee",
+        "A customer who complains"
+      ],
+      "answer": 1,
+      "explanation": "Vendor = nhà cung cấp/người bán."
+    },
+    {
+      "id": "tv018",
+      "question": "Due to heavy traffic, the shipment will be ___.",
+      "options": ["delayed", "decided", "developed", "declared"],
+      "answer": 0,
+      "explanation": "Delayed = bị trễ, phù hợp ngữ cảnh giao hàng chậm vì kẹt xe."
+    },
+    {
+      "id": "tv019",
+      "question": "\"Prioritize\" có nghĩa là gì?",
+      "options": [
+        "To ignore something",
+        "To arrange in order of importance",
+        "To delay a task",
+        "To duplicate a file"
+      ],
+      "answer": 1,
+      "explanation": "Prioritize = sắp xếp theo thứ tự ưu tiên."
+    },
+    {
+      "id": "tv020",
+      "question": "The contract must be signed ___ both parties.",
+      "options": ["by", "with", "from", "at"],
+      "answer": 0,
+      "explanation": "Hợp đồng được ký \"bởi\" hai bên → giới từ by."
+    },
+    {
+      "id": "tv021",
+      "question": "Trong hóa đơn, \"outstanding payment\" có nghĩa là gì?",
+      "options": [
+        "Khoản thanh toán xuất sắc",
+        "Khoản thanh toán chưa được trả",
+        "Khoản thanh toán đã bị hủy",
+        "Khoản thanh toán đã được hoàn lại"
+      ],
+      "answer": 1,
+      "explanation": "Trong ngữ cảnh tài chính, \"outstanding\" nghĩa là chưa thanh toán/còn tồn đọng."
+    },
+    {
+      "id": "tv022",
+      "question": "Please ___ your badge before entering the building.",
+      "options": ["present", "presents", "presenting", "presented"],
+      "answer": 0,
+      "explanation": "Câu mệnh lệnh dùng động từ nguyên mẫu: present."
+    },
+    {
+      "id": "tv023",
+      "question": "\"Subsidiary\" dùng để chỉ gì?",
+      "options": [
+        "A smaller company owned by a larger one",
+        "A type of tax",
+        "A job interview",
+        "A shipping method"
+      ],
+      "answer": 0,
+      "explanation": "Subsidiary = công ty con, thuộc sở hữu của công ty mẹ."
+    },
+    {
+      "id": "tv024",
+      "question": "The flight was ___ due to bad weather.",
+      "options": ["cancelled", "promoted", "negotiated", "reimbursed"],
+      "answer": 0,
+      "explanation": "Cancelled = bị hủy, phù hợp ngữ cảnh thời tiết xấu."
+    },
+    {
+      "id": "tv025",
+      "question": "\"Proficient\" có nghĩa gần nhất với từ nào?",
+      "options": ["Beginner", "Skilled", "Confused", "Absent"],
+      "answer": 1,
+      "explanation": "Proficient = thành thạo, gần nghĩa với skilled."
+    }
+  ]
+}

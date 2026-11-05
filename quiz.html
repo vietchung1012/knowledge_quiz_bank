@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Làm bài trắc nghiệm</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header quiz-header">
+    <a href="index.html" class="back-link">&larr; Về trang chủ</a>
+    <h1 id="quiz-title">Đang tải...</h1>
+    <div class="progress-bar">
+      <div id="progress-fill" class="progress-fill"></div>
+    </div>
+    <p id="progress-text" class="progress-text"></p>
+  </header>
+
+  <main class="container">
+    <div id="quiz-area">
+      <p class="loading">Đang tải câu hỏi...</p>
+    </div>
+
+    <div id="result-area" class="hidden">
+      <h2>Kết quả</h2>
+      <p id="result-score" class="result-score"></p>
+      <p id="result-message" class="result-message"></p>
+      <div id="review-list" class="review-list"></div>
+      <div class="actions">
+        <button id="retry-btn" class="btn btn-primary">Làm lại</button>
+        <a href="index.html" class="btn btn-secondary">Chọn lĩnh vực khác</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

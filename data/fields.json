@@ -1,0 +1,11 @@
+[
+  {
+    "id": "toeic_vocab",
+    "title": "Từ vựng TOEIC",
+    "description": "Kiểm tra vốn từ vựng tiếng Anh thường gặp trong đề thi TOEIC và môi trường công sở.",
+    "file": "data/toeic_vocab.json",
+    "icon": "📘",
+    "color": "#3b82f6",
+    "questionCount": 25
+  }
+]
